@@ -21,7 +21,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 Route::group(['prefix'=>'admin'], function() {
 Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
 
@@ -76,3 +75,5 @@ Route::group(['prefix' => 'products'], function () {
 });
 
 });
+
+Route::get('/test', \App\Http\Controllers\Client\IndexController::class)->where('page','.*');
