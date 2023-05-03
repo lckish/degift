@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/w', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -21,9 +21,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/',\App\Http\Controllers\Main\IndexController::class)->name('main.index');
 
-Route::group(['prefix' => 'categories'], function (){
+Route::group(['prefix'=>'admin'], function() {
+Route::get('/', \App\Http\Controllers\Main\IndexController::class)->name('main.index');
+
+Route::group(['prefix' => 'categories'], function () {
     Route::get('/', \App\Http\Controllers\Category\IndexController::class)->name('category.index');
     Route::get('/create', \App\Http\Controllers\Category\CreateController::class)->name('category.create');
     Route::post('/', \App\Http\Controllers\Category\StoreController::class)->name('category.store');
@@ -33,7 +35,7 @@ Route::group(['prefix' => 'categories'], function (){
     Route::delete('/{category}', \App\Http\Controllers\Category\DeleteController::class)->name('category.delete');
 });
 
-Route::group(['prefix' => 'tags'], function (){
+Route::group(['prefix' => 'tags'], function () {
     Route::get('/', \App\Http\Controllers\Tag\IndexController::class)->name('tag.index');
     Route::get('/create', \App\Http\Controllers\Tag\CreateController::class)->name('tag.create');
     Route::post('/', \App\Http\Controllers\Tag\StoreController::class)->name('tag.store');
@@ -43,7 +45,7 @@ Route::group(['prefix' => 'tags'], function (){
     Route::delete('/{tag}', \App\Http\Controllers\Tag\DeleteController::class)->name('tag.delete');
 });
 
-Route::group(['prefix' => 'colors'], function (){
+Route::group(['prefix' => 'colors'], function () {
     Route::get('/', \App\Http\Controllers\Color\IndexController::class)->name('color.index');
     Route::get('/create', \App\Http\Controllers\Color\CreateController::class)->name('color.create');
     Route::post('/', \App\Http\Controllers\Color\StoreController::class)->name('color.store');
@@ -53,7 +55,7 @@ Route::group(['prefix' => 'colors'], function (){
     Route::delete('/{color}', \App\Http\Controllers\Color\DeleteController::class)->name('color.delete');
 });
 
-Route::group(['prefix' => 'users'], function (){
+Route::group(['prefix' => 'users'], function () {
     Route::get('/', \App\Http\Controllers\User\IndexController::class)->name('user.index');
     Route::get('/create', \App\Http\Controllers\User\CreateController::class)->name('user.create');
     Route::post('/', \App\Http\Controllers\User\StoreController::class)->name('user.store');
@@ -63,7 +65,7 @@ Route::group(['prefix' => 'users'], function (){
     Route::delete('/{user}', \App\Http\Controllers\User\DeleteController::class)->name('user.delete');
 });
 
-Route::group(['prefix' => 'products'], function (){
+Route::group(['prefix' => 'products'], function () {
     Route::get('/', \App\Http\Controllers\Product\IndexController::class)->name('product.index');
     Route::get('/create', \App\Http\Controllers\Product\CreateController::class)->name('product.create');
     Route::post('/', \App\Http\Controllers\Product\StoreController::class)->name('product.store');
@@ -71,4 +73,6 @@ Route::group(['prefix' => 'products'], function (){
     Route::get('/{product}', \App\Http\Controllers\Product\ShowController::class)->name('product.show');
     Route::patch('/{product}', \App\Http\Controllers\Product\UpdateController::class)->name('product.update');
     Route::delete('/{product}', \App\Http\Controllers\Product\DeleteController::class)->name('product.delete');
+});
+
 });
