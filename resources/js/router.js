@@ -7,10 +7,12 @@ export default createRouter({
     routes: [
         {
             path: '/',
+            name: 'home',
             component: Home,
         },
         {
             path: '/products',
+            name: 'products',
             component: () => import('@/views/product/Index.vue'),
         },
 

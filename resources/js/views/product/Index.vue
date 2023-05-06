@@ -1,10 +1,15 @@
 <template>
-
+        <div>
+            Продуктыыыы
+        </div>
 </template>
 
 <script>
 export default {
-    name: "Index"
+    name: "Index",
+    mounted() {
+        $(document).trigger('change')
+    }
 }
 </script>
 
