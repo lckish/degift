@@ -31,6 +31,12 @@
                         <input type="text" value="{{old('name')}}" name="name" class="form-control" placeholder="Имя">
                     </div>
                     <div class="form-group">
+                        <input type="text" value="{{old('surname')}}" name="surname" class="form-control" placeholder="Фамилия">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" value="{{old('patronymic')}}" name="patronymic" class="form-control" placeholder="Отчество">
+                    </div>
+                    <div class="form-group">
                         <input type="email" value="{{old('email')}}" name="email" class="form-control" placeholder="Email">
                     </div>
                     <div class="form-group">
@@ -38,12 +44,6 @@
                     </div>
                     <div class="form-group">
                         <input type="text" value="{{old('password_confirmation')}}" name="password_confirmation" class="form-control" placeholder="Подтверждение пароля">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" value="{{old('surname')}}" name="surname" class="form-control" placeholder="Фамилия">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" value="{{old('patronymic')}}" name="patronymic" class="form-control" placeholder="Отчество">
                     </div>
                     <div class="form-group">
                         <input type="text" value="{{old('age')}}" name="age" class="form-control" placeholder="Возраст">

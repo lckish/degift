@@ -29,7 +29,10 @@
     <link rel="stylesheet" href="{{asset('assets/css/plugin/animate.css')}}">
     <!-- Style Css -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-
+{{--    @vite(['resources/js/app.js', 'resources/css/app.css'])--}}
+{{--    <script src="{{url('https://unpkg.com/vue@3)')}}"></script>--}}
+{{--    <script src="{{url('https://unpkg.com/vue-router@4')}}"></script>--}}
+{{--    <script type="module" src="{{asset('/app.js')}}" defer></script>--}}
 </head>
 
 @yield('content')
@@ -49,8 +52,10 @@
 <script src="{{asset('assets/js/plugin/wow.v1.3.0.min.js')}}"></script> <!-- Wow js -->
 <script src="{{asset('assets/js/plugin/jquery.countdown.min.js')}}"></script> <!-- Main js -->
 <script src="{{asset('assets/js/main.js')}}"></script>
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
+{{--<script type="module" src="{{asset('@/resources/js/app.js')}}" defer></script>--}}
 <!--==== Js Scripts End ====-->
-<script type="module" src="{{asset('main.js')}}"></script>
-</body>
 
-</html><!DOCTYPE html>
+
+</html>
+<!DOCTYPE html>

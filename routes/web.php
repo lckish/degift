@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
 
@@ -76,4 +76,4 @@ Route::group(['prefix' => 'products'], function () {
 
 });
 
-Route::get('/test', \App\Http\Controllers\Client\IndexController::class)->where('page','.*');
+Route::get('{page}', \App\Http\Controllers\Client\IndexController::class)->where('page','.*');
