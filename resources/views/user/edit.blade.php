@@ -10,7 +10,7 @@
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{route('main.index')}}">Welcome</a></li>
+                        <li class="breadcrumb-item"><a href="{{route('main.index')}}">Главная</a></li>
                         <li class="breadcrumb-item"><a href="{{route('user.index')}}">Пользователи</a></li>
                         <li class="breadcrumb-item"><a
                                 href="{{route('user.show',$user->id)}}">Пользователь {{$user->id}}</a></li>

@@ -51,7 +51,6 @@
                     <div class="form-group">
                         <input type="text" value="{{$product->is_published ?? old('is_published')}}" name="is_published" class="form-control" placeholder="Публикация">
                     </div>
-
                     <div class="form-group">
                         <input type="text" value="{{$product->category_id ?? old('category_id')}}" name="category_id" class="form-control" placeholder="Категория">
                     </div>
