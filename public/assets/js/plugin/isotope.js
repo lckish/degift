@@ -1,17 +1,4 @@
- /**!
-  * MixItUp v2.1.11
-  *
-  * @copyright Copyright 2015 KunkaLabs Limited.
-  * @author    KunkaLabs Limited.
-  * @link      https://mixitup.kunkalabs.com
-  *
-  * @license   Commercial use requires a commercial license.
-  *            https://mixitup.kunkalabs.com/licenses/
-  *
-  *            Non-commercial use permitted under terms of CC-BY-NC license.
-  *            http://creativecommons.org/licenses/by-nc/3.0/
-  */
-  ! function (a, b) {
+ ! function (a, b) {
     "use strict";
     a.MixItUp = function () {
       var b = this;
@@ -761,12 +748,12 @@
       })
     }
   }(jQuery);
- 
- 
- 
+
+
+
   (function ($) {
     'use strict';
     //Mixitup js
     $('.item-galleryy').mixItUp();
- 
+
   })(jQuery);
