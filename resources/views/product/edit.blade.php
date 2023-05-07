@@ -46,6 +46,9 @@
                         <input type="text" value="{{$product->price ?? old('price')}}" name="price" class="form-control" placeholder="Цена">
                     </div>
                     <div class="form-group">
+                        <input type="text" value="{{$product->old_price ?? old('old_price')}}" name="old_price" class="form-control" placeholder="Старая цена">
+                    </div>
+                    <div class="form-group">
                         <input type="text" value="{{$product->count ?? old('count')}}" name="count" class="form-control" placeholder="Количество">
                     </div>
                     <div class="form-group">

@@ -6,6 +6,7 @@ use App\Http\Resources\Category\CategoryResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+
 class ProductResource extends JsonResource
 {
     /**
@@ -22,6 +23,7 @@ class ProductResource extends JsonResource
             'content' => $this->content,
             'image_url' => $this->imageUrl,
             'price' => $this->price,
+            'old_price' => $this->price,
             'count' => $this->count,
             'is_published' => $this->is_published,
             'category'=> new CategoryResource($this->category)

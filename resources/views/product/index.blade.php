@@ -41,6 +41,7 @@
                                     <th>Контент</th>
                                     <th>Картинка</th>
                                     <th>Цена</th>
+                                    <th>Старая цена</th>
                                     <th>Количество</th>
                                     <th>Публикация</th>
                                     <th>Категория</th>
@@ -56,6 +57,7 @@
                                     <td>{{$product->content}}</td>
                                     <td>{{$product->preview_image}}</td>
                                     <td>{{$product->price}}</td>
+                                    <td>{{$product->old_price}}</td>
                                     <td>{{$product->count}}</td>
                                     <td>{{$product->is_published}}</td>
                                     <td>{{$product->category_id}}</td>

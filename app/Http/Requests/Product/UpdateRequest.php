@@ -27,6 +27,7 @@ class UpdateRequest extends FormRequest
             'content' => 'nullable|string',
             'preview_image' => 'nullable|string',
             'price' => 'nullable|integer',
+            'old_price' => 'nullable|integer',
             'count' => 'nullable|integer',
             'is_published' => 'nullable|integer',
             'category_id' => 'nullable|integer',

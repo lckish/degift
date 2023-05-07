@@ -72,6 +72,10 @@
                                     <td>{{$product->price}}</td>
                                 </tr>
                                 <tr>
+                                    <td>Старая цена</td>
+                                    <td>{{$product->old_price}}</td>
+                                </tr>
+                                <tr>
                                     <td>Количество</td>
                                     <td>{{$product->count}}</td>
                                 </tr>
