@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Group;
 use Illuminate\Database\Seeder;
 
 
@@ -22,6 +23,7 @@ class DatabaseSeeder extends Seeder
             TagSeeder::class,
             ProductTagSeeder::class,
             ProductColorSeeder::class,
+            GroupSeeder::class,
         ]);
     }
 }

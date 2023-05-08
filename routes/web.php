@@ -34,6 +34,16 @@ Route::group(['prefix' => 'categories'], function () {
     Route::delete('/{category}', \App\Http\Controllers\Admin\Category\DeleteController::class)->name('category.delete');
 });
 
+    Route::group(['prefix' => 'groups'], function () {
+        Route::get('/', \App\Http\Controllers\Admin\Group\IndexController::class)->name('group.index');
+        Route::get('/group', \App\Http\Controllers\Admin\Group\CreateController::class)->name('group.create');
+        Route::post('/', \App\Http\Controllers\Admin\Group\StoreController::class)->name('group.store');
+        Route::get('/{group}/edit', \App\Http\Controllers\Admin\Group\EditController::class)->name('group.edit');
+        Route::get('/{group}', \App\Http\Controllers\Admin\Group\ShowController::class)->name('group.show');
+        Route::patch('/{group}', \App\Http\Controllers\Admin\Group\UpdateController::class)->name('group.update');
+        Route::delete('/{group}', \App\Http\Controllers\Admin\Group\DeleteController::class)->name('group.delete');
+    });
+
 Route::group(['prefix' => 'tags'], function () {
     Route::get('/', \App\Http\Controllers\Admin\Tag\IndexController::class)->name('tag.index');
     Route::get('/create', \App\Http\Controllers\Admin\Tag\CreateController::class)->name('tag.create');
