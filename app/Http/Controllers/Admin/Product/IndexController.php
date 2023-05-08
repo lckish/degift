@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Product;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Group;
 use App\Models\Product;
 
 class IndexController extends Controller
@@ -12,7 +13,8 @@ class IndexController extends Controller
     {
         $products = Product::all();
         $categories = Category::all();
-        return view('product.index', compact('products', 'categories'));
+        $groups = Group::all();
+        return view('product.index', compact('products', 'categories', 'groups'));
     }
 
 

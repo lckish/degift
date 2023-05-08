@@ -19,11 +19,11 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             ColorSeeder::class,
             UserSeeder::class,
+            GroupSeeder::class,
             ProductSeeder::class,
             TagSeeder::class,
             ProductTagSeeder::class,
             ProductColorSeeder::class,
-            GroupSeeder::class,
         ]);
     }
 }

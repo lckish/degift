@@ -57,6 +57,9 @@
                     <div class="form-group">
                         <input type="text" value="{{$product->category_id ?? old('category_id')}}" name="category_id" class="form-control" placeholder="Категория">
                     </div>
+                    <div class="form-group">
+                        <input type="text" value="{{$product->group_id ?? old('group_id')}}" name="group_id" class="form-control" placeholder="Группа продукта">
+                    </div>
 
                     <div class="form-group">
                         <input type="submit" class="btn btn-primary" value="Редактировать">

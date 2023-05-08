@@ -87,6 +87,10 @@
                                     <td>Категория</td>
                                     <td>{{$product->category_id}}</td>
                                 </tr>
+                                <tr>
+                                    <td>Группа продукта</td>
+                                    <td>{{$product->group_id}}</td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>

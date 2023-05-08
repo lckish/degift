@@ -45,6 +45,7 @@
                                     <th>Количество</th>
                                     <th>Публикация</th>
                                     <th>Категория</th>
+                                    <th>Группа продукта</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -61,6 +62,7 @@
                                     <td>{{$product->count}}</td>
                                     <td>{{$product->is_published}}</td>
                                     <td>{{$product->category_id}}</td>
+                                    <td>{{$product->group_id}}</td>
                                 </tr>
                                 @endforeach
                                 </tbody>

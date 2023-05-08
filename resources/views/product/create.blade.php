@@ -72,6 +72,15 @@
                             @endforeach
                         </select>
                     </div>
+                    {{--Выбор группы продукта--}}
+                    <div class="form-group">
+                        <select name="group_id" class="form-control select2" style="width: 100%;">
+                            <option selected="selected" disabled>Выберите группу продукта</option>
+                            @foreach($groups as $group)
+                                <option value="{{$group->id}}">{{$group->title}}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     {{--Выбор тега--}}
                     <div class="form-group">
                         <select name="tags[]" class="tags" multiple="multiple" data-placeholder="Выберите тег"

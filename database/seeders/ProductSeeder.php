@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use App\Models\Group;
 use App\Models\Product;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -35,6 +36,8 @@ class ProductSeeder extends Seeder
             'count' => rand(0,100),
             'is_published' => 1,
             'category_id' => Category::all()->random()->id,
+            'group_id' => Group::all()->random()->id,
+
         ]);
         $tmp++;
         endWhile;
