@@ -32,6 +32,8 @@ class UpdateRequest extends FormRequest
             'is_published' => 'nullable|integer',
             'category_id' => 'nullable|integer',
             'group_id'=> 'nullable',
+            'product_images'=> 'nullable',
+
         ];
     }
 }

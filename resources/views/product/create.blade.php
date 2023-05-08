@@ -51,11 +51,47 @@
                     <div class="form-group">
                         <input type="text" name="count" class="form-control" placeholder="Количество на складе">
                     </div>
-                    {{--Фото--}}
+                    {{--Фото превью--}}
                     <div class="form-group">
                         <div class="input-group">
                             <div class="custom-file">
                                 <input name="preview_image" type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Выберите файл</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">Загрузить</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{--Фото 1--}}
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input name="product_images[]" type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Выберите файл</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">Загрузить</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{--Фото 2--}}
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input name="product_images[]" type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Выберите файл</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">Загрузить</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{--Фото 3--}}
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input name="product_images[]" type="file" class="custom-file-input" id="exampleInputFile">
                                 <label class="custom-file-label" for="exampleInputFile">Выберите файл</label>
                             </div>
                             <div class="input-group-append">
