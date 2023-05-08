@@ -186,6 +186,70 @@
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-8">
+                            <!--                            табло над продуктами-->
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div
+                                        class="shop-grid-page-top-info p-0 justify-content-md-between justify-content-center">
+                                        <div class="left-box wow fadeInUp  animated"
+                                             style="visibility: visible; animation-name: fadeInUp;">
+                                            <p>Showing 1–12 of 50 Results</p>
+                                        </div>
+                                        <div
+                                            class="right-box justify-content-md-between justify-content-center wow fadeInUp  animated"
+                                            style="visibility: visible; animation-name: fadeInUp;">
+                                            <div class="short-by">
+                                                <div class="select-box">
+                                                    <select class="wide" style="display: none;">
+                                                        <option data-display="Short by latest">Featured</option>
+                                                        <option value="1">Best selling</option>
+                                                        <option value="2">Alphabetically, A-Z</option>
+                                                        <option value="3">Alphabetically, Z-A</option>
+                                                        <option value="3">Price, low to high</option>
+                                                        <option value="3">Price, high to low</option>
+                                                        <option value="3">Date, old to new</option>
+                                                    </select>
+                                                    <div class="nice-select wide" tabindex="0"><span class="current">Short by latest</span>
+                                                        <ul class="list">
+                                                            <li data-value="Featured" data-display="Short by latest"
+                                                                class="option selected">Featured
+                                                            </li>
+                                                            <li data-value="1" class="option">Best selling</li>
+                                                            <li data-value="2" class="option">Alphabetically, A-Z</li>
+                                                            <li data-value="3" class="option">Alphabetically, Z-A</li>
+                                                            <li data-value="3" class="option">Price, low to high</li>
+                                                            <li data-value="3" class="option">Price, high to low</li>
+                                                            <li data-value="3" class="option">Date, old to new</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="product-view-style d-flex justify-content-md-between justify-content-center">
+                                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="pills-grid-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-grid"
+                                                                type="button" role="tab" aria-selected="true">
+                                                            <i class="flaticon-grid"></i>
+                                                        </button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="pills-list-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-list"
+                                                                type="button" role="tab" aria-selected="false">
+                                                            <i class="flaticon-list"></i>
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <button class="slidebarfilter d-lg-none d-flex"><i
+                                                    class="flaticon-edit"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                            продукты-->
                             <div class="row">
                                 <div class="col-12">
                                     <div class="tab-content" id="pills-tabContent">
@@ -199,7 +263,7 @@
                                                             :src="product.image_url"
                                                             class="first-img" alt=""/> <img
                                                             :src="product.image_url" class="hover-img"/>
-<!--                                                            src="public/assets/images/home-three/productss2-hover-1.png"-->
+
 
                                                         </a>
                                                             <div class="products-grid-one__badge-box"> <span
@@ -217,7 +281,8 @@
                                                                         class="flaticon-left-and-right-arrows"></i>
                                                                         <span>
                                                                             compare</span> </a></li>
-                                                                    <li><a :href="`#popup${product.id}`" class="popup_link"> <i
+                                                                    <li><a :href="`#popup${product.id}`"
+                                                                           class="popup_link"> <i
                                                                         class="flaticon-visibility"></i>
                                                                         <span> quick view</span>
                                                                     </a></li>
@@ -292,7 +357,7 @@
                                                                     </div>
                                                                     <div class="col-lg-6">
                                                                         <div class="popup-right-content">
-                                                                            <h3>{{product.title}}</h3>
+                                                                            <h3>{{ product.title }}</h3>
                                                                             <div class="ratting"><i
                                                                                 class="flaticon-star"></i> <i
                                                                                 class="flaticon-star"></i> <i
@@ -300,7 +365,7 @@
                                                                                 <i class="flaticon-star"></i> <i
                                                                                     class="flaticon-star"></i>
                                                                                 <span>(112)</span></div>
-                                                                            <p class="text"> {{product.description}}
+                                                                            <p class="text"> {{ product.description }}
                                                                             </p>
                                                                             <div class="price">
                                                                                 <h2> ₽{{ product.price }}
@@ -308,19 +373,15 @@
                                                                                 </h2>
                                                                                 <h6> In stuck</h6>
                                                                             </div>
-                                                                            <div class="color-varient"><a href="#0"
-                                                                                                          class="color-name pink">
-                                                                                <span>Pink</span> </a> <a href="#0"
-                                                                                                          class="color-name red">
-                                                                                <span>Red</span> </a>
-                                                                                <a href="#0"
-                                                                                   class="color-name yellow"><span>Yellow</span>
-                                                                                </a> <a href="#0"
-                                                                                        class="color-name blue">
-                                                                                    <span>Blue</span>
-                                                                                </a> <a href="#0"
-                                                                                        class="color-name black">
-                                                                                    <span>Black</span> </a></div>
+                                                                            <div class="color-varient"  >
+
+                                                                                <template v-for="groupProduct in product.group_products">
+                                                                                <a v-for="color in groupProduct.colors" href="#0" :style="`background: #${color.title};`" class="color-name">
+                                                                                    <span>{{color.title}}</span>
+                                                                                </a>
+                                                                                </template>
+
+                                                                            </div>
                                                                             <div class="add-product">
                                                                                 <h6>Qty:</h6>
                                                                                 <div class="button-group">
@@ -334,7 +395,8 @@
                                                                                         <span class="increaseQty"> <i
                                                                                             class="flaticon-plus"></i>
                                                                                     </span></div>
-                                                                                    <button class="btn--primary "> Добавить в корзину
+                                                                                    <button class="btn--primary ">
+                                                                                        Добавить в корзину
                                                                                     </button>
                                                                                 </div>
                                                                             </div>
@@ -355,11 +417,12 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="products-three-single-content text-center"> <span>{{ product.category.title }}</span>
-                                                            <h5><a href="shop-details-3.html"> {{product.title}} </a>
+                                                        <div class="products-three-single-content text-center">
+                                                            <span>{{ product.category.title }}</span>
+                                                            <h5><a href="shop-details-3.html"> {{ product.title }} </a>
                                                             </h5>
                                                             <p>
-                                                                <del>₽{{ product.old_price}}</del>
+                                                                <del>₽{{ product.old_price }}</del>
                                                                 ₽{{ product.price }}
                                                             </p>
                                                         </div>
@@ -2328,6 +2391,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--                            циферки снизу-->
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-center wow fadeInUp animated">
                                     <ul class="pagination text-center">
@@ -2361,7 +2425,7 @@ export default {
         $(document).trigger('change')
         this.getProducts()
     },
-    data(){
+    data() {
         return {
             products: []
         }
@@ -2374,7 +2438,7 @@ export default {
                     this.products = res.data.data
                     console.log(res);
                 })
-                .finally( v => {
+                .finally(v => {
                     $(document).trigger('change')
                 })
         }
