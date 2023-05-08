@@ -27,7 +27,7 @@ class ProductSeeder extends Seeder
         while ($tmp <= 10):
         DB::table('products')->insert([
             'title' => Str::random(10),
-            'description' => Str::random(10),
+            'description' => Str::random(20),
             'content' => Str::random(100),
             'preview_image' => array_rand(array_flip($array)),
             'price' => rand(50,9999),
