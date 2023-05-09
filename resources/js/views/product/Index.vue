@@ -321,7 +321,7 @@
                                                                                 <h2> ₽{{ popupProduct.price }}
                                                                                     <del>₽{{ popupProduct.old_price }}</del>
                                                                                 </h2>
-                                                                                <h6> In stuck</h6>
+                                                                                <h6> В наличии</h6>
                                                                             </div>
                                                                             <div class="color-varient">
 
@@ -337,7 +337,7 @@
 
                                                                             </div>
                                                                             <div class="add-product">
-                                                                                <h6>Qty:</h6>
+                                                                                <h6>Количество:</h6>
                                                                                 <div class="button-group">
                                                                                     <div
                                                                                         class="qtySelector text-center">
@@ -354,18 +354,6 @@
                                                                                     </button>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="payment-method"><a href="#0">
-                                                                                <img
-                                                                                    src="public/assets/images/payment_method/method_1.png"
-                                                                                    alt=""> </a>
-                                                                                <a href="#0"> <img
-                                                                                    src="public/assets/images/payment_method/method_2.png"
-                                                                                    alt=""> </a> <a href="#0"> <img
-                                                                                    src="public/assets/images/payment_method/method_3.png"
-                                                                                    alt=""> </a>
-                                                                                <a href="#0"> <img
-                                                                                    src="public/assets/images/payment_method/method_4.png"
-                                                                                    alt=""> </a></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
