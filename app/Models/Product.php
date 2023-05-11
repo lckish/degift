@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use function Symfony\Component\Translation\t;
@@ -9,6 +10,8 @@ use function Symfony\Component\Translation\t;
 
 class Product extends Model
 {
+    use Filterable;
+
     protected $table = 'products';
     protected $guarded = false;
 
