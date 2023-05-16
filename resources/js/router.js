@@ -15,6 +15,21 @@ export default createRouter({
             name: 'products',
             component: () => import('@/views/product/Index.vue'),
         },
+        {
+            path: '/cart',
+            name: 'cart',
+            component: () => import('@/views/cart/Index.vue'),
+        },
+        {
+            path: '/sign',
+            name: 'sign',
+            component: () => import('@/views/auth/Sign.vue'),
+        },
+        {
+            path: '/register',
+            name: 'register',
+            component: () => import('@/views/auth/Register.vue'),
+        },
 
     ],
 })

@@ -37,6 +37,7 @@
                                 <ul class="page-dropdown-menu">
                                     <li class="dropdown-list"> <router-link to="/"><span>Главная </span></router-link></li>
                                     <li class="dropdown-list"> <router-link to="/products"><span>Продукты </span></router-link></li>
+                                    <li class="dropdown-list"> <router-link to="/about"><span>О нас </span></router-link></li>
                                 </ul>
                             </div>
                         </div>
@@ -44,7 +45,7 @@
                     <div class="d-lg-block d-none">
                         <div class="row g-0 position-relative">
                             <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
-                                <div class="logo"> <a href="index.html"> <img src="public/assets/images/logo/logo.png" alt=""> </a>
+                                <div class="logo"> <a href="/"> <img src="public/assets/images/logo/logo.png" alt=""> </a>
                                 </div>
                             </div>
                             <div class="col-lg-9 g-0 p-0">
@@ -54,16 +55,7 @@
                                             <p class="d-flex align-items-center"> <span class="icon"> <i
                                                 class="flaticon-power"></i> </span> Добро пожаловать на сервис DEGIFT</p>
                                             <div class="right d-flex align-items-center ">
-                                                <div class="language currency"> <select>
-                                                    <option>USD</option>
-                                                    <option value="1">INR</option>
-                                                    <option value="2">BDT</option>
-                                                </select> </div>
-                                                <div class="language two"> <select>
-                                                    <option>ENGLISH </option>
-                                                    <option value="1">GERMAN</option>
-                                                    <option value="4">FRENCH</option>
-                                                </select> </div> <a href="#"> Sign In / Register </a>
+                                                    <a href="/sign"> Вход / Регистрация </a>
                                             </div>
                                         </div>
                                     </div>
@@ -88,7 +80,7 @@
                                                         <li class="d-lg-block d-none"><a href="wishlist.html"
                                                                                          class="number"><i class="flaticon-heart"></i> <span
                                                             class="count">(2)</span> </a> </li>
-                                                        <li class="cartm"> <a href="#0" class="number cart-icon"> <i
+                                                        <li class="cartm"> <a href="/cart" class="number cart-icon"> <i
                                                             class="flaticon-shopping-cart"></i><span
                                                             class="count">(5)</span> </a> </li>
                                                     </ul>
@@ -217,16 +209,13 @@
                             <div class="footer-default__single-box">
                                 <div class="company-info">
                                     <div class="footer-title">
-                                        <h4> Office</h4>
+                                        <h4> Офис</h4>
                                     </div>
                                     <div class="text1">
-                                        <p>29 Holles Place, Dublin 2 D02 YY46</p>
-                                    </div>
-                                    <div class="text2">
-                                        <p>68 Jay Street, Suite 902 New Side <br> Brooklyn, NY 11201</p>
+                                        <p>30 лет победы, 7А</p>
                                     </div>
                                     <div class="text3">
-                                        <p>New York, United States</p>
+                                        <p>Ижевск, Российская федерация</p>
                                     </div>
                                 </div>
                             </div>
@@ -234,28 +223,25 @@
                         <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 mt-30 wow fadeInUp animated">
                             <div class="footer-default__single-box">
                                 <div class="footer-title">
-                                    <h4> Useful Links </h4>
+                                    <h4> Полезные ссылки </h4>
                                 </div>
                                 <ul class="footer-links">
-                                    <li><a href="my-account.html">Account</a></li>
-                                    <li><a href="login.html">Sign In</a></li>
-                                    <li><a href="cart.html">View Cart</a></li>
-                                    <li><a href="wishlist.html">My WishList</a></li>
-                                    <li><a href="compare.html">Compare Products</a></li>
+                                    <li><a href="my-account.html">Мой аккаунт</a></li>
+                                    <li><a href="/sign">Вход</a></li>
+                                    <li><a href="/cart">Просмотреть карзину</a></li>
+                                    <li><a href="wishlist.html">Мой список желаемого</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mt-30 wow fadeInUp animated">
                             <div class="footer-default__single-box">
                                 <div class="footer-title">
-                                    <h4> Information </h4>
+                                    <h4> Информация </h4>
                                 </div>
                                 <ul class="footer-links">
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact.html">Contact Us </a></li>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="blog.html">Latest Posts</a></li>
-                                    <li><a href="order-track.html">Order Track</a></li>
+                                    <li><a href="about-us.html">О нас</a></li>
+                                    <li><a href="contact.html">Наши контакты </a></li>
+                                    <li><a href="faq.html">Вопросы</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -268,8 +254,8 @@
                                     <p class="text">Введите свой адрес электронной почты, чтобы получать последние обновления о наших продуктах и
                                         рекламных акциях. </p>
                                     <form action="#0" class="footer-default__subscrib-form">
-                                        <div class="footer-input-box"> <input type="email" placeholder="Email address"
-                                                                              name="email"> <button type="submit" class="subscribe_btn"> Subscribe
+                                        <div class="footer-input-box"> <input type="email" placeholder="Почтовый адрес"
+                                                                              name="email"> <button type="submit" class="subscribe_btn"> Подписаться
                                         </button> </div>
                                     </form>
                                     <div class="newsletter-bottom d-flex align-items-center">
@@ -318,7 +304,7 @@
 export default {
     name: "App",
     mounted() {
-        $(document).trigger('change')
+        $(document).trigger('initi')
     }
 }
 </script>
