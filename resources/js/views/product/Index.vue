@@ -109,37 +109,44 @@
                                         </div>
                                     </form>
                                     <div class="single-sidebar-box mt-30 wow fadeInUp animated ">
+<!--                                        фильтр по категориям-->
                                         <h4>Выберете категорию</h4>
                                         <div class="checkbox-item">
                                             <form>
-                                                <div v-for="category in filterList.categories" class="form-group"><input type="checkbox" :id="category.id"> <label
+                                                <div v-for="category in filterList.categories" class="form-group"><input :value="category.id" v-model="categories" type="checkbox" :id="category.id"> <label
                                                     :for="category.id">{{ category.title }}</label></div>
                                             </form>
                                         </div>
                                     </div>
                                     <div  class="single-sidebar-box mt-30 wow fadeInUp animated">
+<!--                                        фильтр по цветам-->
                                         <h4>Выбор цвета</h4>
                                         <ul class="color-option">
                                             <li v-for="color in filterList.colors">
-                                                <a class="color-option-single" :style="`background: #${color.title}`"> <span>{{color.title}}</span> </a>
+                                                <a @click.prevent="addColor(color.id)" class="color-option-single" :style="`background: #${color.title}`"> <span>{{color.title}}</span> </a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="single-sidebar-box mt-30 wow fadeInUp animated">
+<!--                                        Фильтр по цене-->
                                         <h4>Фильтровать по цене</h4>
                                         <div class="slider-box">
                                             <div id="price-range" class="slider"></div>
                                             <div class="output-price"><label for="priceRange">Цена:</label> <input
                                                 type="text" id="priceRange" readonly></div>
-                                            <button class="filterbtn"
+<!--                                            кнопка фильтровать-->
+                                            <button @click.prevent="filterProducts" class="filterbtn"
                                                     type="submit"> Фильтровать
                                             </button>
                                         </div>
                                     </div>
                                     <div class="single-sidebar-box mt-30 wow fadeInUp animated pb-0 border-bottom-0 ">
+<!--                                        фильтр по тегам-->
                                         <h4>Теги </h4>
                                         <ul class="popular-tag">
-                                            <li v-for="tag in filterList.tags"><a>{{ tag.title }}</a></li>
+                                            <li v-for="tag in filterList.tags">
+                                                <a @click.prevent="addTag(tag.id)" >{{ tag.title }}</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -376,12 +383,59 @@ export default {
             products: [],
             popupProduct: null,
             filterList: [],
+            categories: [],
+            colors: [],
+            tags: [],
+            prices: [],
         }
     },
 
     methods: {
+
+        filterProducts() {
+            let prices = $('#priceRange').val()
+            this.prices = prices.replace(/[\s+]|[₽]/g, '').split('-')
+
+            this.axios.post('/api/products', {
+                'categories': this.categories,
+                'colors': this.colors,
+                'tags': this.tags,
+                'prices': this.prices
+            })
+                .then(res => {
+                    this.products = res.data.data
+                    console.log(res);
+                })
+                .finally(v => {
+                    $(document).trigger('initi')
+                })
+        },
+
+        addColor(id) {
+            if (!this.colors.includes(id)) {
+                this.colors.push(id)
+            } else {
+                this.colors = this.colors.filter( elem => {
+                    return elem !== id
+                })
+            }
+        },
+
+        addTag(id) {
+            if (!this.tags.includes(id)) {
+                this.tags.push(id)
+            } else {
+                this.tags = this.tags.filter( elem => {
+                    return elem !== id
+                })
+            }
+        },
+
+
         getProducts() {
-            this.axios.get('/api/products')
+            this.axios.post('/api/products',{
+
+            })
                 .then(res => {
                     this.products = res.data.data
                     console.log(res);
