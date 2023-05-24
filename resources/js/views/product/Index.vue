@@ -22,74 +22,74 @@
                 </div>
             </div>
             <!--End Breadcrumb Style2-->
-<!--            &lt;!&ndash;Start Product Categories One&ndash;&gt;-->
-<!--            <section class="product-categories-one pb-60">-->
-<!--                <div class="container">-->
-<!--                    <div class="row wow fadeInUp animated">-->
-<!--                        <div class="col-xl-12">-->
-<!--                            <div class="product-categories-one__inner">-->
-<!--                                <ul>-->
-<!--                                    <li><a href="#0" class="img-box">-->
-<!--                                        <div class="inner"><img-->
-<!--                                            src="public/assets/images/shop/product-categories-v1-img1.png"-->
-<!--                                            alt=""/></div>-->
-<!--                                    </a>-->
-<!--                                        <div class="title"><a href="#0">-->
-<!--                                            <h6>Accessories</h6>-->
-<!--                                        </a></div>-->
-<!--                                    </li>-->
-<!--                                    <li><a href="#0" class="img-box">-->
-<!--                                        <div class="inner"><img-->
-<!--                                            src="public/assets/images/shop/product-categories-v1-img2.png"-->
-<!--                                            alt=""/></div>-->
-<!--                                    </a>-->
-<!--                                        <div class="title"><a href="#0">-->
-<!--                                            <h6>Furnitures</h6>-->
-<!--                                        </a></div>-->
-<!--                                    </li>-->
-<!--                                    <li><a href="#0" class="img-box">-->
-<!--                                        <div class="inner"><img-->
-<!--                                            src="public/assets/images/shop/product-categories-v1-img3.png"-->
-<!--                                            alt=""/></div>-->
-<!--                                    </a>-->
-<!--                                        <div class="title"><a href="#0">-->
-<!--                                            <h6>Jewellery</h6>-->
-<!--                                        </a></div>-->
-<!--                                    </li>-->
-<!--                                    <li><a href="#0" class="img-box">-->
-<!--                                        <div class="inner"><img-->
-<!--                                            src="public/assets/images/shop/product-categories-v1-img4.png"-->
-<!--                                            alt=""/></div>-->
-<!--                                    </a>-->
-<!--                                        <div class="title"><a href="#0">-->
-<!--                                            <h6>Shoes</h6>-->
-<!--                                        </a></div>-->
-<!--                                    </li>-->
-<!--                                    <li><a href="#0" class="img-box">-->
-<!--                                        <div class="inner"><img-->
-<!--                                            src="public/assets/images/shop/product-categories-v1-img5.png"-->
-<!--                                            alt=""/></div>-->
-<!--                                    </a>-->
-<!--                                        <div class="title"><a href="#0">-->
-<!--                                            <h6>Electronics</h6>-->
-<!--                                        </a></div>-->
-<!--                                    </li>-->
-<!--                                    <li><a href="#0" class="img-box">-->
-<!--                                        <div class="inner"><img-->
-<!--                                            src="public/assets/images/shop/product-categories-v1-img6.png"-->
-<!--                                            alt=""/></div>-->
-<!--                                    </a>-->
-<!--                                        <div class="title"><a href="#0">-->
-<!--                                            <h6>Fashion</h6>-->
-<!--                                        </a></div>-->
-<!--                                    </li>-->
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </section>-->
-<!--            &lt;!&ndash;End Product Categories One&ndash;&gt;-->
+            <!--            &lt;!&ndash;Start Product Categories One&ndash;&gt;-->
+            <!--            <section class="product-categories-one pb-60">-->
+            <!--                <div class="container">-->
+            <!--                    <div class="row wow fadeInUp animated">-->
+            <!--                        <div class="col-xl-12">-->
+            <!--                            <div class="product-categories-one__inner">-->
+            <!--                                <ul>-->
+            <!--                                    <li><a href="#0" class="img-box">-->
+            <!--                                        <div class="inner"><img-->
+            <!--                                            src="public/assets/images/shop/product-categories-v1-img1.png"-->
+            <!--                                            alt=""/></div>-->
+            <!--                                    </a>-->
+            <!--                                        <div class="title"><a href="#0">-->
+            <!--                                            <h6>Accessories</h6>-->
+            <!--                                        </a></div>-->
+            <!--                                    </li>-->
+            <!--                                    <li><a href="#0" class="img-box">-->
+            <!--                                        <div class="inner"><img-->
+            <!--                                            src="public/assets/images/shop/product-categories-v1-img2.png"-->
+            <!--                                            alt=""/></div>-->
+            <!--                                    </a>-->
+            <!--                                        <div class="title"><a href="#0">-->
+            <!--                                            <h6>Furnitures</h6>-->
+            <!--                                        </a></div>-->
+            <!--                                    </li>-->
+            <!--                                    <li><a href="#0" class="img-box">-->
+            <!--                                        <div class="inner"><img-->
+            <!--                                            src="public/assets/images/shop/product-categories-v1-img3.png"-->
+            <!--                                            alt=""/></div>-->
+            <!--                                    </a>-->
+            <!--                                        <div class="title"><a href="#0">-->
+            <!--                                            <h6>Jewellery</h6>-->
+            <!--                                        </a></div>-->
+            <!--                                    </li>-->
+            <!--                                    <li><a href="#0" class="img-box">-->
+            <!--                                        <div class="inner"><img-->
+            <!--                                            src="public/assets/images/shop/product-categories-v1-img4.png"-->
+            <!--                                            alt=""/></div>-->
+            <!--                                    </a>-->
+            <!--                                        <div class="title"><a href="#0">-->
+            <!--                                            <h6>Shoes</h6>-->
+            <!--                                        </a></div>-->
+            <!--                                    </li>-->
+            <!--                                    <li><a href="#0" class="img-box">-->
+            <!--                                        <div class="inner"><img-->
+            <!--                                            src="public/assets/images/shop/product-categories-v1-img5.png"-->
+            <!--                                            alt=""/></div>-->
+            <!--                                    </a>-->
+            <!--                                        <div class="title"><a href="#0">-->
+            <!--                                            <h6>Electronics</h6>-->
+            <!--                                        </a></div>-->
+            <!--                                    </li>-->
+            <!--                                    <li><a href="#0" class="img-box">-->
+            <!--                                        <div class="inner"><img-->
+            <!--                                            src="public/assets/images/shop/product-categories-v1-img6.png"-->
+            <!--                                            alt=""/></div>-->
+            <!--                                    </a>-->
+            <!--                                        <div class="title"><a href="#0">-->
+            <!--                                            <h6>Fashion</h6>-->
+            <!--                                        </a></div>-->
+            <!--                                    </li>-->
+            <!--                                </ul>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </section>-->
+            <!--            &lt;!&ndash;End Product Categories One&ndash;&gt;-->
             <!--Start product-grid-->
             <div class="product-grid pt-60 pb-120">
                 <div class="container">
@@ -109,43 +109,47 @@
                                         </div>
                                     </form>
                                     <div class="single-sidebar-box mt-30 wow fadeInUp animated ">
-<!--                                        фильтр по категориям-->
+                                        <!--                                        фильтр по категориям-->
                                         <h4>Выберете категорию</h4>
                                         <div class="checkbox-item">
                                             <form>
-                                                <div v-for="category in filterList.categories" class="form-group"><input :value="category.id" v-model="categories" type="checkbox" :id="category.id"> <label
+                                                <div v-for="category in filterList.categories" class="form-group"><input
+                                                    :value="category.id" v-model="categories" type="checkbox"
+                                                    :id="category.id"> <label
                                                     :for="category.id">{{ category.title }}</label></div>
                                             </form>
                                         </div>
                                     </div>
-                                    <div  class="single-sidebar-box mt-30 wow fadeInUp animated">
-<!--                                        фильтр по цветам-->
+                                    <div class="single-sidebar-box mt-30 wow fadeInUp animated">
+                                        <!--                                        фильтр по цветам-->
                                         <h4>Выбор цвета</h4>
                                         <ul class="color-option">
                                             <li v-for="color in filterList.colors">
-                                                <a @click.prevent="addColor(color.id)" class="color-option-single" :style="`background: #${color.title}`"> <span>{{color.title}}</span> </a>
+                                                <a @click.prevent="addColor(color.id)" class="color-option-single"
+                                                   :style="`background: #${color.title}`">
+                                                    <span>{{ color.title }}</span> </a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="single-sidebar-box mt-30 wow fadeInUp animated">
-<!--                                        Фильтр по цене-->
+                                        <!--                                        Фильтр по цене-->
                                         <h4>Фильтровать по цене</h4>
                                         <div class="slider-box">
                                             <div id="price-range" class="slider"></div>
                                             <div class="output-price"><label for="priceRange">Цена:</label> <input
                                                 type="text" id="priceRange" readonly></div>
-<!--                                            кнопка фильтровать-->
+                                            <!--                                            кнопка фильтровать-->
                                             <button @click.prevent="filterProducts" class="filterbtn"
                                                     type="submit"> Фильтровать
                                             </button>
                                         </div>
                                     </div>
                                     <div class="single-sidebar-box mt-30 wow fadeInUp animated pb-0 border-bottom-0 ">
-<!--                                        фильтр по тегам-->
+                                        <!--                                        фильтр по тегам-->
                                         <h4>Теги </h4>
                                         <ul class="popular-tag">
                                             <li v-for="tag in filterList.tags">
-                                                <a @click.prevent="addTag(tag.id)" >{{ tag.title }}</a>
+                                                <a @click.prevent="addTag(tag.id)">{{ tag.title }}</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -224,7 +228,8 @@
                                                                         class="flaticon-heart">
                                                                     </i> <span>
                                                                             wishlist</span> </a></li>
-                                                                    <li><a @click="getProduct(product.id)" :href="`#popup${product.id}`"
+                                                                    <li><a @click="getProduct(product.id)"
+                                                                           :href="`#popup${product.id}`"
                                                                            class="popup_link"> <i
                                                                         class="flaticon-visibility"></i>
                                                                         <span>быстрый просмотр</span>
@@ -238,8 +243,9 @@
                                                                 <div
                                                                     class="row justify-content-between align-items-center">
                                                                     <div class="col-lg-6">
-<!--                                                                         Провера: если картинок больше 2 то отобразятся все -->
-                                                                        <div class="quick-view__left-content" v-if="popupProduct.product_images.length > 2">
+                                                                        <!--                                                                         Провера: если картинок больше 2 то отобразятся все -->
+                                                                        <div class="quick-view__left-content"
+                                                                             v-if="popupProduct.product_images.length > 2">
                                                                             <div class="tabs">
                                                                                 <div class="popup-product-thumb-box">
                                                                                     <ul>
@@ -254,8 +260,10 @@
                                                                                 </div>
                                                                                 <div
                                                                                     class="popup-product-main-image-box">
-                                                                                    <div v-for="productImage in popupProduct.product_images" :id="`tabb${productImage.id}`"
-                                                                                         class="tab-item popup-product-image">
+                                                                                    <div
+                                                                                        v-for="productImage in popupProduct.product_images"
+                                                                                        :id="`tabb${productImage.id}`"
+                                                                                        class="tab-item popup-product-image">
                                                                                         <div
                                                                                             class="popup-product-single-image">
                                                                                             <img
@@ -282,11 +290,16 @@
                                                                                 <i class="flaticon-star"></i> <i
                                                                                     class="flaticon-star"></i>
                                                                                 <span>(112)</span></div>
-                                                                            <p class="text"> {{ popupProduct.description }}
+                                                                            <p class="text"> {{
+                                                                                    popupProduct.description
+                                                                                }}
                                                                             </p>
                                                                             <div class="price">
                                                                                 <h2> ₽{{ popupProduct.price }}
-                                                                                    <del>₽{{ popupProduct.old_price }}</del>
+                                                                                    <del>₽{{
+                                                                                            popupProduct.old_price
+                                                                                        }}
+                                                                                    </del>
                                                                                 </h2>
                                                                                 <h6> В наличии</h6>
                                                                             </div>
@@ -294,7 +307,8 @@
 
                                                                                 <template
                                                                                     v-for="groupProduct in popupProduct.group_products">
-                                                                                    <a @click.prevent="getProduct(groupProduct.id)" v-for="color in groupProduct.colors"
+                                                                                    <a @click.prevent="getProduct(groupProduct.id)"
+                                                                                       v-for="color in groupProduct.colors"
                                                                                        href="#0"
                                                                                        :style="`background: #${color.title};`"
                                                                                        class="color-name">
@@ -347,15 +361,46 @@
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-center wow fadeInUp animated">
                                     <ul class="pagination text-center">
-                                        <li class="next"><a href="#0"><i class="flaticon-left-arrows"
-                                                                         aria-hidden="true"></i> </a></li>
-                                        <li><a href="#0">1</a></li>
-                                        <li><a href="#0" class="active">2</a></li>
-                                        <li><a href="#0">3</a></li>
-                                        <li><a href="#0">...</a></li>
-                                        <li><a href="#0">10</a></li>
-                                        <li class="next"><a href="#0"><i class="flaticon-next-1"
-                                                                         aria-hidden="true"></i> </a></li>
+                                        <li v-if="pagination.current_page !== 1" class="next">
+                                            <a @click.prevent="getProducts(pagination.current_page - 1)" href="#0">
+                                                <i class="flaticon-back"
+                                                   aria-hidden="true">
+                                                </i>
+                                            </a>
+                                        </li>
+
+
+                                        <li v-for="link in pagination.links">
+                                            <template v-if="Number(link.label) &&
+                                            (pagination.current_page - link.label < 2 &&
+                                            pagination.current_page - link.label > -2) ||
+                                            Number(link.label) === 1 || Number(link.label) === pagination.last_page">
+                                                <a @click.prevent="getProducts(link.label)"
+                                                   :class="link.active ? 'active' : ''" href="#0">{{ link.label }}</a>
+                                            </template>
+                                            <template  v-if="
+<!--                                            Условие троеточия слева-->
+                                            Number(link.label) &&
+                                            pagination.current_page !==3 &&
+                                            (pagination.current_page - link.label === 2) ||
+<!--                                            Условие троеточия справа-->
+                                            Number(link.label) &&
+                                            pagination.current_page !== pagination.last_page - 2 &&
+                                            (pagination.current_page - link.label === -2)
+">
+                                                <a>...</a>
+                                            </template>
+                                        </li>
+
+
+                                        <li v-if="pagination.current_page !== pagination.last_page" class="next">
+                                            <a @click.prevent="getProducts(pagination.current_page + 1)" href="#0">
+                                                <i class="flaticon-next"
+                                                   aria-hidden="true">
+
+                                                </i>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -376,7 +421,7 @@ export default {
     mounted() {
         $(document).trigger('initi')
         this.getProducts()
-        this. getFilterList()
+        this.getFilterList()
     },
     data() {
         return {
@@ -387,6 +432,7 @@ export default {
             colors: [],
             tags: [],
             prices: [],
+            pagination: [],
         }
     },
 
@@ -395,27 +441,15 @@ export default {
         filterProducts() {
             let prices = $('#priceRange').val()
             this.prices = prices.replace(/[\s+]|[₽]/g, '').split('-')
+            this.getProducts()
 
-            this.axios.post('/api/products', {
-                'categories': this.categories,
-                'colors': this.colors,
-                'tags': this.tags,
-                'prices': this.prices
-            })
-                .then(res => {
-                    this.products = res.data.data
-                    console.log(res);
-                })
-                .finally(v => {
-                    $(document).trigger('initi')
-                })
         },
 
         addColor(id) {
             if (!this.colors.includes(id)) {
                 this.colors.push(id)
             } else {
-                this.colors = this.colors.filter( elem => {
+                this.colors = this.colors.filter(elem => {
                     return elem !== id
                 })
             }
@@ -425,19 +459,24 @@ export default {
             if (!this.tags.includes(id)) {
                 this.tags.push(id)
             } else {
-                this.tags = this.tags.filter( elem => {
+                this.tags = this.tags.filter(elem => {
                     return elem !== id
                 })
             }
         },
 
 
-        getProducts() {
-            this.axios.post('/api/products',{
-
+        getProducts(page = 1) {
+            this.axios.post('/api/products', {
+                'categories': this.categories,
+                'colors': this.colors,
+                'tags': this.tags,
+                'prices': this.prices,
+                'page': page
             })
                 .then(res => {
                     this.products = res.data.data
+                    this.pagination = res.data.meta
                     console.log(res);
                 })
                 .finally(v => {

@@ -29,7 +29,7 @@ class ProductSeeder extends Seeder
             "images/product/pWV0PhX4bC7vCQHHtpQg6L4HgfyxtIC0VHaVpkCe.jpg",
             "images/product/dg.jpg",
         );
-        while ($tmp <= 10):
+        while ($tmp <= 84):
         DB::table('products')->insert([
             'title' => Str::random(10),
             'description' => Str::random(20),
