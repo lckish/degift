@@ -21,76 +21,6 @@
                     </div>
                 </div>
             </div>
-            <!--End Breadcrumb Style2-->
-            <!--            &lt;!&ndash;Start Product Categories One&ndash;&gt;-->
-            <!--            <section class="product-categories-one pb-60">-->
-            <!--                <div class="container">-->
-            <!--                    <div class="row wow fadeInUp animated">-->
-            <!--                        <div class="col-xl-12">-->
-            <!--                            <div class="product-categories-one__inner">-->
-            <!--                                <ul>-->
-            <!--                                    <li><a href="#0" class="img-box">-->
-            <!--                                        <div class="inner"><img-->
-            <!--                                            src="public/assets/images/shop/product-categories-v1-img1.png"-->
-            <!--                                            alt=""/></div>-->
-            <!--                                    </a>-->
-            <!--                                        <div class="title"><a href="#0">-->
-            <!--                                            <h6>Accessories</h6>-->
-            <!--                                        </a></div>-->
-            <!--                                    </li>-->
-            <!--                                    <li><a href="#0" class="img-box">-->
-            <!--                                        <div class="inner"><img-->
-            <!--                                            src="public/assets/images/shop/product-categories-v1-img2.png"-->
-            <!--                                            alt=""/></div>-->
-            <!--                                    </a>-->
-            <!--                                        <div class="title"><a href="#0">-->
-            <!--                                            <h6>Furnitures</h6>-->
-            <!--                                        </a></div>-->
-            <!--                                    </li>-->
-            <!--                                    <li><a href="#0" class="img-box">-->
-            <!--                                        <div class="inner"><img-->
-            <!--                                            src="public/assets/images/shop/product-categories-v1-img3.png"-->
-            <!--                                            alt=""/></div>-->
-            <!--                                    </a>-->
-            <!--                                        <div class="title"><a href="#0">-->
-            <!--                                            <h6>Jewellery</h6>-->
-            <!--                                        </a></div>-->
-            <!--                                    </li>-->
-            <!--                                    <li><a href="#0" class="img-box">-->
-            <!--                                        <div class="inner"><img-->
-            <!--                                            src="public/assets/images/shop/product-categories-v1-img4.png"-->
-            <!--                                            alt=""/></div>-->
-            <!--                                    </a>-->
-            <!--                                        <div class="title"><a href="#0">-->
-            <!--                                            <h6>Shoes</h6>-->
-            <!--                                        </a></div>-->
-            <!--                                    </li>-->
-            <!--                                    <li><a href="#0" class="img-box">-->
-            <!--                                        <div class="inner"><img-->
-            <!--                                            src="public/assets/images/shop/product-categories-v1-img5.png"-->
-            <!--                                            alt=""/></div>-->
-            <!--                                    </a>-->
-            <!--                                        <div class="title"><a href="#0">-->
-            <!--                                            <h6>Electronics</h6>-->
-            <!--                                        </a></div>-->
-            <!--                                    </li>-->
-            <!--                                    <li><a href="#0" class="img-box">-->
-            <!--                                        <div class="inner"><img-->
-            <!--                                            src="public/assets/images/shop/product-categories-v1-img6.png"-->
-            <!--                                            alt=""/></div>-->
-            <!--                                    </a>-->
-            <!--                                        <div class="title"><a href="#0">-->
-            <!--                                            <h6>Fashion</h6>-->
-            <!--                                        </a></div>-->
-            <!--                                    </li>-->
-            <!--                                </ul>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </section>-->
-            <!--            &lt;!&ndash;End Product Categories One&ndash;&gt;-->
-            <!--Start product-grid-->
             <div class="product-grid pt-60 pb-120">
                 <div class="container">
                     <div class="row gx-4">
@@ -102,7 +32,7 @@
                                     <form action="#0"
                                           class="footer-default__subscrib-form m-0 p-0 wow fadeInUp animated">
                                         <div class="footer-input-box p-0 "><input type="email"
-                                                                                  placeholder="Email address"
+                                                                                  placeholder="Поиск"
                                                                                   name="email">
                                             <button type="submit" class="subscribe_btn"><i
                                                 class="flaticon-magnifying-glass"></i></button>
@@ -164,7 +94,6 @@
                                         class="shop-grid-page-top-info p-0 justify-content-md-between justify-content-center">
                                         <div class="left-box wow fadeInUp  animated"
                                              style="visibility: visible; animation-name: fadeInUp;">
-                                            <p>Showing 1–12 of 50 Results</p>
                                         </div>
                                         <div
                                             class="right-box justify-content-md-between justify-content-center wow fadeInUp  animated"
@@ -172,25 +101,19 @@
                                             <div class="short-by">
                                                 <div class="select-box">
                                                     <select class="wide" style="display: none;">
-                                                        <option data-display="Short by latest">Featured</option>
-                                                        <option value="1">Best selling</option>
-                                                        <option value="2">Alphabetically, A-Z</option>
-                                                        <option value="3">Alphabetically, Z-A</option>
-                                                        <option value="3">Price, low to high</option>
-                                                        <option value="3">Price, high to low</option>
-                                                        <option value="3">Date, old to new</option>
+                                                        <option data-display="Сортировать по">Рекомендуемые</option>
+                                                        <option value="1">Популярное</option>
+                                                        <option value="3">По возростанию цены</option>
+                                                        <option value="3">По убыванию цены</option>
                                                     </select>
-                                                    <div class="nice-select wide" tabindex="0"><span class="current">Short by latest</span>
+                                                    <div class="nice-select wide" tabindex="0"><span class="current">Сортировать по</span>
                                                         <ul class="list">
-                                                            <li data-value="Featured" data-display="Short by latest"
-                                                                class="option selected">Featured
+                                                            <li data-value="Featured" data-display="Рекомендуемые"
+                                                                class="option selected">Рекомендуемые
                                                             </li>
-                                                            <li data-value="1" class="option">Best selling</li>
-                                                            <li data-value="2" class="option">Alphabetically, A-Z</li>
-                                                            <li data-value="3" class="option">Alphabetically, Z-A</li>
-                                                            <li data-value="3" class="option">Price, low to high</li>
-                                                            <li data-value="3" class="option">Price, high to low</li>
-                                                            <li data-value="3" class="option">Date, old to new</li>
+                                                            <li data-value="1" class="option">Популярное</li>
+                                                            <li data-value="3" class="option">По возростанию цены</li>
+                                                            <li data-value="3" class="option">По убыванию цены</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -209,14 +132,14 @@
                                             <div class="row">
                                                 <div v-for="product in products" class="col-xl-4 col-lg-6 col-6 ">
                                                     <div class="products-three-single w-100  mt-30">
-                                                        <div class="products-three-single-img"><a
-                                                            href="shop-details-3.html" class="d-block"> <img
+                                                        <div class="products-three-single-img">
+<!--                                                            ссылка по фото-->
+                                                            <router-link :to="{name: 'products.show', params: {id: product.id}}" class="d-block"> <img
                                                             :src="product.image_url"
                                                             class="first-img" alt=""/> <img
-                                                            :src="product.image_url" class="hover-img"/>
+                                                            :src="product.image_url" alt="" class="hover-img"/>
 
-
-                                                        </a>
+                                                        </router-link>
                                                             <div class="products-grid-one__badge-box"> <span
                                                                 class="bg_base badge new ">New</span>
                                                             </div>
@@ -342,7 +265,8 @@
                                                         </div>
                                                         <div class="products-three-single-content text-center">
                                                             <span>{{ product.category.title }}</span>
-                                                            <h5><a href="shop-details-3.html"> {{ product.title }} </a>
+                                                            <h5>
+                                                                <router-link :to="{name: 'products.show', params: {id: product.id}}"> {{ product.title }} </router-link>
                                                             </h5>
                                                             <p>
                                                                 <del>₽{{ product.old_price }}</del>
@@ -379,11 +303,10 @@
                                                    :class="link.active ? 'active' : ''" href="#0">{{ link.label }}</a>
                                             </template>
                                             <template  v-if="
-<!--                                            Условие троеточия слева-->
                                             Number(link.label) &&
                                             pagination.current_page !==3 &&
                                             (pagination.current_page - link.label === 2) ||
-<!--                                            Условие троеточия справа-->
+
                                             Number(link.label) &&
                                             pagination.current_page !== pagination.last_page - 2 &&
                                             (pagination.current_page - link.label === -2)

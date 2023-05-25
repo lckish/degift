@@ -26,14 +26,13 @@ class ProductSeeder extends Seeder
             "images/product/e2gJ98RnDQ7ttyA02OqTrkNmF22bbmRQdp5EGYPh.jpg",
             "images/product/czAdDGlalOqzbxSp3X8z29BtCIfdQO5wfWeShEQ9.jpg",
             "images/product/EwbQCdjDIxBPe6kOVSuLB7j8hEVNOD1WQQMHmeix.jpg",
-            "images/product/pWV0PhX4bC7vCQHHtpQg6L4HgfyxtIC0VHaVpkCe.jpg",
             "images/product/dg.jpg",
         );
-        while ($tmp <= 84):
+        while ($tmp <= 10):
         DB::table('products')->insert([
             'title' => Str::random(10),
-            'description' => Str::random(20),
-            'content' => Str::random(100),
+            'description' => Str::random(40),
+            'content' => Str::random(500),
             'preview_image' => array_rand(array_flip($array)),
             'price' => rand(50,9999),
             'old_price' => rand(50,9999),

@@ -36,7 +36,7 @@
                                 </div>
                                 <ul class="page-dropdown-menu">
                                     <li class="dropdown-list"> <router-link to="/"><span>Главная </span></router-link></li>
-                                    <li class="dropdown-list"> <router-link to="/products"><span>Продукты </span></router-link></li>
+                                    <li class="dropdown-list"> <router-link to="/products"><span>Каталог </span></router-link></li>
                                     <li class="dropdown-list"> <router-link to="/about"><span>О нас </span></router-link></li>
                                 </ul>
                             </div>
@@ -68,7 +68,8 @@
                                                 <nav>
                                                     <ul class="page-dropdown-menu d-flex align-items-center justify-content-center">
                                                         <li class="dropdown-list"> <router-link to="/"> <span>Главная </span>  </router-link></li>
-                                                        <li class="dropdown-list"> <router-link to="/products"><span>Продукты </span></router-link></li>
+                                                        <li class="dropdown-list"> <router-link to="/products"><span>Каталог </span></router-link></li>
+                                                        <li class="dropdown-list"> <router-link to="/about"><span>О нас </span></router-link></li>
                                                     </ul>
                                                 </nav>
 
@@ -104,8 +105,8 @@
                         <div class="container">
                             <div class="row">
                                 <div class="menu-info d-flex justify-content-between align-items-center">
-                                    <div class="menubar"> <span></span> <span></span> <span></span> </div> <a
-                                    href="index.html" class="logo"> <img src="public/assets/images/logo/logo.png" alt=""> </a>
+                                    <div class="menubar"> <span></span> <span></span> <span></span> </div>
+                                    <router-link to="/" class="logo"> <img src="public/assets/images/logo/logo.png" alt=""> </router-link>
                                     <div class="cart-holder">
                                         <a href="#0" class="cart cart-icon position-relative">
                                             <i class="flaticon-shopping-cart"></i>
@@ -117,8 +118,8 @@
                     </div>
                 </div>
                 <div class="container position-relative d-lg-block d-none">
-                    <div class="d-flex align-items-center justify-content-between"> <a href="index.html" class="logo me-2">
-                        <img src="public/assets/images/logo/logo.png" alt=""> </a>
+                    <div class="d-flex align-items-center justify-content-between"> <router-link to="/" class="logo me-2">
+                        <img src="public/assets/images/logo/logo.png" alt=""> </router-link>
                         <div class="mega-menu-default mega-menu d-lg-block d-none">
                             <div class="container ">
                                 <div class="row">
@@ -126,7 +127,8 @@
                                         <ul
                                             class="page-dropdown-menu d-flex align-items-center justify-content-center">
                                                 <li class="dropdown-list"> <router-link to="/"><span>Главная</span></router-link></li>
-                                                <li class="dropdown-list"> <router-link to="/products"><span>Продукты </span></router-link></li>
+                                                <li class="dropdown-list"> <router-link to="/products"><span>Каталог </span></router-link></li>
+                                                <li class="dropdown-list"> <router-link to="/about"><span>О нас </span></router-link></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -258,23 +260,6 @@
                                                                               name="email"> <button type="submit" class="subscribe_btn"> Подписаться
                                         </button> </div>
                                     </form>
-                                    <div class="newsletter-bottom d-flex align-items-center">
-                                        <div class="footer-title-box">
-                                            <p>Подпишитесь на нас: </p>
-                                        </div>
-                                        <div class="footer__medio-boxx  medio-boxx  d-flex align-items-center">
-                                            <ul>
-                                                <li><a href="https://www.facebook.com/" target="_blank" class="active"><i
-                                                    class="flaticon-facebook-app-symbol"></i></a></li>
-                                                <li><a href="https://www.youtube.com/" target="_blank"><i
-                                                    class="flaticon-youtube"></i></a></li>
-                                                <li><a href="https://twitter.com/"><i class="flaticon-twitter"
-                                                                                      target="_blank"></i></a></li>
-                                                <li><a href="https://www.instagram.com/"><i class="flaticon-instagram"
-                                                                                            target="_blank"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -286,12 +271,6 @@
                     <div class="footer_bottom_content">
                         <div class="copyright wow fadeInUp animated">
                             <p>© 2023 <a href="#">Degift.</a> Все права защищены.</p>
-                        </div>
-                        <div class="footer-payment wow fadeInUp animated">
-                            <a href="#0"> <img src="public/assets/images/home-four/method-1.jpg" alt="payment"> </a>
-                            <a href="#0"> <img src="public/assets/images/home-four/method-2.jpg" alt="payment"> </a>
-                            <a href="#0"> <img src="public/assets/images/home-four/method-3.jpg" alt="payment"> </a>
-                            <a href="#0"> <img src="public/assets/images/home-four/method-4.jpg" alt="payment"> </a>
                         </div>
                     </div>
                 </div>
