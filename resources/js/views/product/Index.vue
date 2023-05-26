@@ -219,7 +219,7 @@
                                                                             </p>
                                                                             <div class="price">
                                                                                 <h2> ₽{{ popupProduct.price }}
-                                                                                    <del>₽{{
+                                                                                    <del v-if="popupProduct.old_price !== null">{{
                                                                                             popupProduct.old_price
                                                                                         }}
                                                                                     </del>
@@ -269,7 +269,7 @@
                                                                 <router-link :to="{name: 'products.show', params: {id: product.id}}"> {{ product.title }} </router-link>
                                                             </h5>
                                                             <p>
-                                                                <del>₽{{ product.old_price }}</del>
+                                                                <del v-if="product.old_price !== null">₽{{ product.old_price }}</del>
                                                                 ₽{{ product.price }}
                                                             </p>
                                                         </div>

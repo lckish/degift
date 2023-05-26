@@ -47,7 +47,7 @@
                                         <h3>{{product.title}}</h3>
                                     </div>
                                     <div  class="shop-details-top-price-box">
-                                        <h3>₽{{ product.price }} <del>₽{{product.old_price}}</del></h3>
+                                        <h3>₽{{ product.price }} <del v-if="product.old_price !== null">₽{{product.old_price}}</del></h3>
                                     </div>
                                     <p class="shop-details-top-product-sale"><span>{{product.count}}</span> количество товара на складе
                                     </p>
@@ -117,7 +117,7 @@
                             <div class="tab-pane fade show active" id="pills-description" role="tabpanel"
                                  aria-labelledby="pills-description-tab">
                                 <div class="product-drescription">
-                                    <h4> Характеристики товара:</h4>
+                                    <h4> Описание товара:</h4>
                                     <p>{{product.content}}</p>
                                 </div>
                             </div>
