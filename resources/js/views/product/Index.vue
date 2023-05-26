@@ -133,19 +133,22 @@
                                                 <div v-for="product in products" class="col-xl-4 col-lg-6 col-6 ">
                                                     <div class="products-three-single w-100  mt-30">
                                                         <div class="products-three-single-img">
-<!--                                                            ссылка по фото-->
-                                                            <router-link :to="{name: 'products.show', params: {id: product.id}}" class="d-block"> <img
-                                                            :src="product.image_url"
-                                                            class="first-img" alt=""/> <img
-                                                            :src="product.image_url" alt="" class="hover-img"/>
+                                                            <!--                                                            ссылка по фото-->
+                                                            <router-link
+                                                                :to="{name: 'products.show', params: {id: product.id}}"
+                                                                class="d-block"><img
+                                                                :src="product.image_url"
+                                                                class="first-img" alt=""/> <img
+                                                                :src="product.image_url" alt="" class="hover-img"/>
 
-                                                        </router-link>
+                                                            </router-link>
                                                             <div class="products-grid-one__badge-box"> <span
                                                                 class="bg_base badge new ">New</span>
                                                                 <span
-                                                                class="bg_base badge discount ">-20%</span>
+                                                                    class="bg_base badge discount ">-20%</span>
                                                             </div>
-                                                            <a href="cart.html" class="addcart btn--primary style2">
+                                                            <a @click.prevent="addToCart(product.id, true)" href="cart.html"
+                                                               class="addcart btn--primary style2">
                                                                 Добавить в корзину </a>
                                                             <div class="products-grid__usefull-links">
                                                                 <ul>
@@ -214,7 +217,9 @@
                                                                             </p>
                                                                             <div class="price">
                                                                                 <h2> ₽{{ popupProduct.price }}
-                                                                                    <del v-if="popupProduct.old_price !== null">{{
+                                                                                    <del
+                                                                                        v-if="popupProduct.old_price !== null">
+                                                                                        {{
                                                                                             popupProduct.old_price
                                                                                         }}
                                                                                     </del>
@@ -248,7 +253,7 @@
                                                                                         <span class="increaseQty"> <i
                                                                                             class="flaticon-plus"></i>
                                                                                     </span></div>
-                                                                                    <button class="btn--primary ">
+                                                                                    <button @click.prevent="addToCart(product.id)" class="btn--primary ">
                                                                                         Добавить в корзину
                                                                                     </button>
                                                                                 </div>
@@ -261,10 +266,15 @@
                                                         <div class="products-three-single-content text-center">
                                                             <span>{{ product.category.title }}</span>
                                                             <h5>
-                                                                <router-link :to="{name: 'products.show', params: {id: product.id}}"> {{ product.title }} </router-link>
+                                                                <router-link
+                                                                    :to="{name: 'products.show', params: {id: product.id}}">
+                                                                    {{ product.title }}
+                                                                </router-link>
                                                             </h5>
                                                             <p>
-                                                                <del v-if="product.old_price !== null">₽{{ product.old_price }}</del>
+                                                                <del v-if="product.old_price !== null">
+                                                                    ₽{{ product.old_price }}
+                                                                </del>
                                                                 ₽{{ product.price }}
                                                             </p>
                                                         </div>
@@ -297,7 +307,7 @@
                                                 <a @click.prevent="getProducts(link.label)"
                                                    :class="link.active ? 'active' : ''" href="#0">{{ link.label }}</a>
                                             </template>
-                                            <template  v-if="
+                                            <template v-if="
                                             Number(link.label) &&
                                             pagination.current_page !==3 &&
                                             (pagination.current_page - link.label === 2) ||
@@ -355,6 +365,37 @@ export default {
     },
 
     methods: {
+
+        addToCart(id, isSingle) {
+            let qty = isSingle ? 1 : $('.qtyValue').val()
+            let cart = localStorage.getItem('cart')
+            $('.qtyValue').val(1)
+
+
+            let newProduct = [{
+                'id': id,
+                'qty': qty
+            }]
+            if (!cart) {
+                localStorage.setItem('cart', JSON.stringify(newProduct));
+            }
+            else {
+                cart = JSON.parse((cart))
+
+                cart.forEach(productInCart => {
+                    if (productInCart.id === id) {
+                        productInCart.qty = Number(productInCart.qty) + Number(qty)
+                        newProduct = null
+                    }
+
+                })
+
+                Array.prototype.push.apply(cart, newProduct)
+                localStorage.setItem('cart', JSON.stringify(cart))
+
+                console.log(cart)
+            }
+        },
 
         filterProducts() {
             let prices = $('#priceRange').val()
