@@ -142,6 +142,8 @@
                                                         </router-link>
                                                             <div class="products-grid-one__badge-box"> <span
                                                                 class="bg_base badge new ">New</span>
+                                                                <span
+                                                                class="bg_base badge discount ">-20%</span>
                                                             </div>
                                                             <a href="cart.html" class="addcart btn--primary style2">
                                                                 Добавить в корзину </a>
@@ -206,13 +208,6 @@
                                                                     <div class="col-lg-6">
                                                                         <div class="popup-right-content">
                                                                             <h3>{{ popupProduct.title }}</h3>
-                                                                            <div class="ratting"><i
-                                                                                class="flaticon-star"></i> <i
-                                                                                class="flaticon-star"></i> <i
-                                                                                class="flaticon-star"></i>
-                                                                                <i class="flaticon-star"></i> <i
-                                                                                    class="flaticon-star"></i>
-                                                                                <span>(112)</span></div>
                                                                             <p class="text"> {{
                                                                                     popupProduct.description
                                                                                 }}

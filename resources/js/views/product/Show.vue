@@ -49,7 +49,7 @@
                                     <div  class="shop-details-top-price-box">
                                         <h3>₽{{ product.price }} <del v-if="product.old_price !== null">₽{{product.old_price}}</del></h3>
                                     </div>
-                                    <p class="shop-details-top-product-sale"><span>{{product.count}}</span> количество товара на складе
+                                    <p class="shop-details-top-product-sale">Количество товара на складе: <span>{{product.count}}</span>
                                     </p>
                                     <div class="shop-details-top-color-sky-box">
                                         <h4>Другие цвета:</h4>
