@@ -1,6 +1,6 @@
 <template>
     <div>
-        <main v-if="product">
+        <main v-if="products">
             <!--Start Shop Details Breadcrumb-->
             <div class="shop-details-breadcrumb wow fadeInUp animated overflow-hidden ">
                 <div class="container">
@@ -25,15 +25,15 @@
                         <div class="col-xl-6 col-lg-6 mt-30 wow fadeInUp animated">
                             <div class="single-product-box one">
                                 <div  class="big-product single-product-one slider-for">
-                                    <div v-for="productImage in product.product_images">
+                                    <div v-for="productImage in products.product_images">
                                         <div  class="single-item"> <img :src="productImage.url" alt="">
-                                            <div class="ptag"> <span class="one">-20% </span> </div>
+                                            <div class="ptag">  <span v-if="products.old_price !== null" class="one">{{Math.round((products.price / products.old_price) * 100) - 100}}%</span> </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="navholder">
                                     <div  class="product-slicknav single-product-one-nav slider-nav">
-                                        <div v-for="productImage in product.product_images"> <span class="single-item"> <img
+                                        <div v-for="productImage in products.product_images"> <span class="single-item"> <img
                                             :src="productImage.url" alt=""> </span>
                                         </div>
                                     </div>
@@ -44,18 +44,18 @@
                             <div class="shop-details-top-right ">
                                 <div class="shop-details-top-right-content-box">
                                     <div  class="shop-details-top-title">
-                                        <h3>{{product.title}}</h3>
+                                        <h3>{{products.title}}</h3>
                                     </div>
                                     <div  class="shop-details-top-price-box">
-                                        <h3>₽{{ product.price }} <del v-if="product.old_price !== null">₽{{product.old_price}}</del></h3>
+                                        <h3>₽{{ products.price }} <del v-if="products.old_price !== null">₽{{products.old_price}}</del></h3>
                                     </div>
-                                    <p class="shop-details-top-product-sale">Количество товара на складе: <span>{{product.count}}</span>
+                                    <p class="shop-details-top-product-sale">Количество товара на складе: <span>{{products.count}}</span>
                                     </p>
                                     <div class="shop-details-top-color-sky-box">
                                         <h4>Другие цвета:</h4>
                                             <div class="color-varient">
                                                 <template
-                                                    v-for="groupProduct in product.group_products">
+                                                    v-for="groupProduct in products.group_products">
                                                     <a @click.prevent="getGroupProduct(groupProduct.id)"
                                                        v-for="color in groupProduct.colors"
                                                        href="#0"
@@ -83,12 +83,13 @@
                                     </div>
                                     <div class="shop-details-top-order-now">
                                     </div>
-                                    <div class="shop-details-top-cart-box-btn"> <button class="btn--primary style2 "
+                                    <div class="shop-details-top-cart-box-btn">
+                                        <button  @click.prevent="addToCart(product)" class="btn--primary style2 "
                                                                                         type="submit">Добавить в корзину</button> </div>
                                     <div class="shop-details-top-order-now">
                                     </div>
                                     <ul class="shop-details-top-category-tags">
-                                        <li>Категория: <span>{{product.category.title}}</span></li>
+                                        <li>Категория: <span>{{products.category.title}}</span></li>
                                         <li>Теги: <span></span></li>
                                     </ul>
                                 </div>
@@ -118,7 +119,7 @@
                                  aria-labelledby="pills-description-tab">
                                 <div class="product-drescription">
                                     <h4> Описание товара:</h4>
-                                    <p>{{product.content}}</p>
+                                    <p>{{products.content}}</p>
                                 </div>
                             </div>
                         </div>
@@ -142,16 +143,50 @@ export default {
     },
     data() {
         return {
-            product: null,
+            products: null,
             groupProduct: null,
         }
     },
 
     methods: {
+
+        addToCart(product, isSingle) {
+            let qty = isSingle ? 1 : $('.qtyValue').val()
+            let cart = localStorage.getItem('cart')
+            $('.qtyValue').val(1)
+
+
+            let newProduct = [{
+                'id': product.id,
+                'image_url': product.image_url,
+                'title': product.title,
+                'price': product.price,
+                'qty': qty
+            }]
+            if (!cart) {
+                localStorage.setItem('cart', JSON.stringify(newProduct));
+            }
+            else {
+                cart = JSON.parse((cart))
+
+                cart.forEach(productInCart => {
+                    if (productInCart.id === product.id) {
+                        productInCart.qty = Number(productInCart.qty) + Number(qty)
+                        newProduct = null
+                    }
+
+                })
+
+                Array.prototype.push.apply(cart, newProduct)
+                localStorage.setItem('cart', JSON.stringify(cart))
+                location.reload();
+            }
+        },
+
         getProduct(id) {
             this.axios.get(`/api/products/${this.$route.params.id}`)
                 .then(res => {
-                    this.product = res.data.data
+                    this.products = res.data.data
                     console.log(res);
                 })
                 .finally(v => {

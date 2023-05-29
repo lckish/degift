@@ -33,6 +33,14 @@
                                     <p>Нет аккаунта? <a href="/register">Зарегестрироваться</a></p>
                                 </div>
                                 <form class="common-form">
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" v-model="name" placeholder="Имя ползователя (или) почта">-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group eye">&ndash;&gt;-->
+<!--                                        <div class="icon icon-1"> <i class="flaticon-hidden"></i></div> <input-->
+<!--                                            type="password" v-model="password" id="password-field" class="form-control" placeholder="Пароль">-->
+<!--                                        <div class="icon icon-2 "><i class="flaticon-visibility"></i> </div>-->
+<!--                                    </div>-->
                                     <div class="form-group"> <input type="text" class="form-control"
                                                                     placeholder="Имя ползователя (или) почта"> </div>
                                     <div class="form-group eye">
@@ -58,7 +66,19 @@
 
 <script>
 export default {
-    name: "Sign"
+    name: "Sign",
+    mounted() {
+        $(document).trigger('initi')
+
+    },
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+
+    }
 }
 </script>
 

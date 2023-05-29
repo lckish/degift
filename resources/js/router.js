@@ -22,7 +22,7 @@ export default createRouter({
         },
         {
             path: '/cart',
-            name: 'cart',
+            name: 'cart.index',
             component: () => import('@/views/cart/Index.vue'),
         },
         {
@@ -34,6 +34,11 @@ export default createRouter({
             path: '/register',
             name: 'register',
             component: () => import('@/views/auth/Register.vue'),
+        },
+        {
+            path: '/about',
+            name: 'about.index',
+            component: () => import('@/views/about/Index.vue'),
         },
 
     ],

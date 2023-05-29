@@ -31,7 +31,7 @@
                                 <div class="sidebar-holder">
                                     <form action="#0"
                                           class="footer-default__subscrib-form m-0 p-0 wow fadeInUp animated">
-                                        <div class="footer-input-box p-0 "><input type="email"
+                                        <div class="footer-input-box p-0 "><input type="text"
                                                                                   placeholder="Поиск"
                                                                                   name="email">
                                             <button type="submit" class="subscribe_btn"><i
@@ -144,18 +144,13 @@
                                                             </router-link>
                                                             <div class="products-grid-one__badge-box"> <span
                                                                 class="bg_base badge new ">New</span>
-                                                                <span
-                                                                    class="bg_base badge discount ">-20%</span>
+                                                                <span v-if="product.old_price !== null" class="bg_base badge discount ">{{Math.round((product.price / product.old_price) * 100) - 100}}%</span>
                                                             </div>
-                                                            <a @click.prevent="addToCart(product.id, true)" href="cart.html"
+                                                            <a @click.prevent="addToCart(product, true)" href=""
                                                                class="addcart btn--primary style2">
                                                                 Добавить в корзину </a>
                                                             <div class="products-grid__usefull-links">
                                                                 <ul>
-                                                                    <li><a href="wishlist.html"> <i
-                                                                        class="flaticon-heart">
-                                                                    </i> <span>
-                                                                            wishlist</span> </a></li>
                                                                     <li><a @click="getProduct(product.id)"
                                                                            :href="`#popup${product.id}`"
                                                                            class="popup_link"> <i
@@ -253,7 +248,7 @@
                                                                                         <span class="increaseQty"> <i
                                                                                             class="flaticon-plus"></i>
                                                                                     </span></div>
-                                                                                    <button @click.prevent="addToCart(product.id)" class="btn--primary ">
+                                                                                    <button @click.prevent="addToCart(product)" class="btn--primary ">
                                                                                         Добавить в корзину
                                                                                     </button>
                                                                                 </div>
@@ -364,16 +359,22 @@ export default {
         }
     },
 
+
     methods: {
 
-        addToCart(id, isSingle) {
+
+
+        addToCart(product, isSingle) {
             let qty = isSingle ? 1 : $('.qtyValue').val()
             let cart = localStorage.getItem('cart')
             $('.qtyValue').val(1)
 
 
             let newProduct = [{
-                'id': id,
+                'id': product.id,
+                'image_url': product.image_url,
+                'title': product.title,
+                'price': product.price,
                 'qty': qty
             }]
             if (!cart) {
@@ -383,7 +384,7 @@ export default {
                 cart = JSON.parse((cart))
 
                 cart.forEach(productInCart => {
-                    if (productInCart.id === id) {
+                    if (productInCart.id === product.id) {
                         productInCart.qty = Number(productInCart.qty) + Number(qty)
                         newProduct = null
                     }
@@ -392,7 +393,7 @@ export default {
 
                 Array.prototype.push.apply(cart, newProduct)
                 localStorage.setItem('cart', JSON.stringify(cart))
-
+                location.reload();
                 console.log(cart)
             }
         },

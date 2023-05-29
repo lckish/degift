@@ -15,10 +15,17 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $tmp = 1;
-        while ($tmp <= 10):
+        $title = array(
+            "Косметика и уход",
+            "Игрушки",
+            "Продукты",
+            "Электроника",
+            "Книги",
+        );
+        while ($tmp <= 4):
         DB::table('categories')->insert([
 
-            'title' => Str::random(10),
+            'title' => $title[$tmp],
         ]);
         $tmp++;
         endWhile;
