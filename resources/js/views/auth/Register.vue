@@ -10,7 +10,7 @@
                                 <h2>Регистрация</h2>
                                 <div class="breadcrumb-menu">
                                     <ul>
-                                        <li><a href="index.html"><i class="flaticon-home pe-2"></i>Главная</a></li>
+                                        <li><router-link to="/" href=""><i class="flaticon-home pe-2"></i>Главная</router-link></li>
                                         <li><i class="flaticon-next"></i></li>
                                         <li class="active">Регистрация</li>
                                     </ul>
@@ -30,7 +30,7 @@
                                  style="background-image: url('public/assets/images/inner-pages/login-bg.png');">
                                 <div class="top-title text-center ">
                                     <h2>Регистрация</h2>
-                                    <p>Уже есть аккаунт? <a href="/sign">Войти</a></p>
+                                    <p>Уже есть аккаунт? <router-link to="/sign" href="">Войти</router-link></p>
                                 </div>
                                 <form class="common-form">
                                     <div class="form-group"><input type="text" class="form-control"
@@ -66,7 +66,23 @@
 
 <script>
 export default {
-    name: "Register"
+    name: "Register",
+    mounted() {
+        $(document).trigger('initi')
+        this.getCartProducts()
+
+    },
+    data() {
+        return {
+            name: '',
+            login: '',
+            email: '',
+            password: '',
+        }
+    },
+    methods: {
+
+    }
 }
 </script>
 

@@ -30,7 +30,7 @@
                                  style="background-image: url('public/assets/images/inner-pages/login-bg.png');">
                                 <div class="top-title text-center ">
                                     <h2>Вход</h2>
-                                    <p>Нет аккаунта? <a href="/register">Зарегестрироваться</a></p>
+                                    <p>Нет аккаунта? <router-link to="/register" href="">Зарегестрироваться</router-link></p>
                                 </div>
                                 <form class="common-form">
 <!--                                    <div class="form-group">-->

@@ -182,7 +182,7 @@
 
         <!--  Footer Three start -->
         <footer class="footer-default footer-3 ">
-            <div class="footer-default__shap_1 position-absolute "> <img src="public/assets/images/shape/footer-shape-2.png"
+            <div class="footer-default__shap_1 position-absolute "> <img src="public/assets/images/shape/footer-shape-1.png"
                                                                          alt=""> </div>
             <!--Start Footer-->
             <div class="footer-default__main-footer position-relative">
@@ -212,7 +212,6 @@
                                     <li><a href="my-account.html">Мой аккаунт</a></li>
                                     <li><a href="/sign">Вход</a></li>
                                     <li><a href="/cart">Просмотреть карзину</a></li>
-                                    <li><a href="wishlist.html">Мой список желаемого</a></li>
                                 </ul>
                             </div>
                         </div>
