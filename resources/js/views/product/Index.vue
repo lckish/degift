@@ -144,7 +144,8 @@
                                                             </router-link>
                                                             <div class="products-grid-one__badge-box"> <span
                                                                 class="bg_base badge new ">New</span>
-                                                                <span v-if="product.old_price !== null" class="bg_base badge discount ">{{Math.round((product.price / product.old_price) * 100) - 100}}%</span>
+                                                                <span v-if="product.old_price !== null"
+                                                                      class="bg_base badge discount ">{{ Math.round((product.price / product.old_price) * 100) - 100 }}%</span>
                                                             </div>
                                                             <a @click.prevent="addToCart(product, true)" href=""
                                                                class="addcart btn--primary style2">
@@ -248,7 +249,9 @@
                                                                                         <span class="increaseQty"> <i
                                                                                             class="flaticon-plus"></i>
                                                                                     </span></div>
-                                                                                    <button @click.prevent="addToCart(product)" class="btn--primary ">
+                                                                                    <button
+                                                                                        @click.prevent="addToCart(product)"
+                                                                                        class="btn--primary ">
                                                                                         Добавить в корзину
                                                                                     </button>
                                                                                 </div>
@@ -361,9 +364,6 @@ export default {
 
 
     methods: {
-
-
-
         addToCart(product, isSingle) {
             let qty = isSingle ? 1 : $('.qtyValue').val()
             let cart = localStorage.getItem('cart')
@@ -379,8 +379,7 @@ export default {
             }]
             if (!cart) {
                 localStorage.setItem('cart', JSON.stringify(newProduct));
-            }
-            else {
+            } else {
                 cart = JSON.parse((cart))
 
                 cart.forEach(productInCart => {

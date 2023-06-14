@@ -84,6 +84,16 @@ Route::group(['prefix' => 'products'], function () {
     Route::delete('/{product}', \App\Http\Controllers\Admin\Product\DeleteController::class)->name('product.delete');
 });
 
+    Route::group(['prefix' => 'orders'], function () {
+        Route::get('/', \App\Http\Controllers\Admin\Order\IndexController::class)->name('order.index');
+        Route::get('/create', \App\Http\Controllers\Admin\Order\CreateController::class)->name('order.create');
+        Route::post('/', \App\Http\Controllers\API\Order\StoreController::class)->name('order.store');
+        Route::get('/{order}/edit', \App\Http\Controllers\Admin\Order\EditController::class)->name('order.edit');
+        Route::get('/{order}', \App\Http\Controllers\Admin\Order\ShowController::class)->name('order.show');
+        Route::patch('/{order}', \App\Http\Controllers\Admin\Order\UpdateController::class)->name('order.update');
+        Route::delete('/{order}', \App\Http\Controllers\Admin\Order\DeleteController::class)->name('order.delete');
+    });
+
 });
 
 Route::get('{page}', \App\Http\Controllers\Client\IndexController::class)->where('page','.*');

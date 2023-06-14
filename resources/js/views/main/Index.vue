@@ -109,28 +109,26 @@
                 <div class="container">
                     <div class="row mt--30">
                         <div class="col-lg-6 h-100 mt-30">
-                            <a href="shop-grid.html" class="catagory-single one home3cat">
-                                <img src="public/assets/images/home-three/cat-1.png" alt="#"
+                            <router-link to="/" href="" class="catagory-single one home3cat">
+                                <img src="public/assets/images/main/test_main1.png" alt="#"
                                      class="background-img bg-img imgone">
                                 <div class="content">
                                     <div class="row w-100 h-100 align-items-center">
                                         <div class="col-xl-7 col-md-9">
-                                            <h5 class="wow animated fadeInUp" data-wow-delay="0.2s"> Shop & Save</h5>
-                                            <h3 class="wow animated fadeInUp" data-wow-delay="0.3s"> Exclusive Women
-                                                Shoes
+                                            <h5 class="wow animated fadeInUp" data-wow-delay="0.2s"> Успей купить</h5>
+                                            <h3 class="wow animated fadeInUp" data-wow-delay="0.3s"> Скидка на игрушки
                                             </h3>
-                                            <span class=" link wow animated fadeInUp" data-wow-delay="0.4s"> explore
-                                            now</span>
+                                            <span class=" link wow animated fadeInUp" data-wow-delay="0.4s">Посмотреть</span>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                         <div class="col-lg-6">
                             <div class="row">
                                 <div class="co-12 mt-30 ">
-                                    <a href="shop-grid.html" class="catagory-single home3cat">
-                                        <img src="public/assets/images/home-three/catbg-3.png" alt=""
+                                    <router-link to="/" class="catagory-single home3cat">
+                                        <img src="public/assets/images/main/test_main2.png" alt=""
                                              class="background-img bg-img">
                                         <div class="content">
                                             <div class="row w-100 h-100 align-items-center">
@@ -138,35 +136,30 @@
                                                     <h5 class=" wow animated red fadeInUp" data-wow-delay="0.2s"> 20%
                                                         Off
                                                     </h5>
-                                                    <h3 class=" wow animated fadeInUp" data-wow-delay="0.3s"> Men
-                                                        Sneakers
+                                                    <h3 class=" wow animated fadeInUp" data-wow-delay="0.3s"> Женская косметика
                                                     </h3>
-                                                    <span class="link wow animated fadeInUp" data-wow-delay="0.4s"> explore
-                                                    now</span>
+                                                    <span class="link wow animated fadeInUp" data-wow-delay="0.4s">Посмотреть</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </router-link>
                                 </div>
                                 <div class="col-12 mt-30">
-                                    <a href="shop-grid.html" class="catagory-single home3cat">
-                                        <img src="public/assets/images/home-three/catbg-2.png" alt=""
+                                    <router-link to="/" href="" class="catagory-single home3cat">
+                                        <img src="public/assets/images/main/test_main3.png" alt=""
                                              class="background-img bg-img">
                                         <div class="content">
                                             <div class="row w-100 h-100 align-items-center">
                                                 <div class="col-xxl-6 col-lg-9">
-                                                    <h5 class=" wow animated fadeInUp" data-wow-delay="0.2s"> New
-                                                        Products
+                                                    <h5 class=" wow animated fadeInUp" data-wow-delay="0.2s"> Не упусти шанс
                                                     </h5>
-                                                    <h3 class=" wow animated fadeInUp" data-wow-delay="0.3s"> Women
-                                                        Sneakers
+                                                    <h3 class=" wow animated fadeInUp" data-wow-delay="0.3s"> Скидка на первую покупку
                                                     </h3>
-                                                    <span class="link wow animated fadeInUp" data-wow-delay="0.4s"> explore
-                                                    now</span>
+                                                    <span class="link wow animated fadeInUp" data-wow-delay="0.4s">посмотреть</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </router-link>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +169,7 @@
             <!-- catagory4 End -->
 
 
-<!--            &lt;!&ndash; Categories tab Start &ndash;&gt;-->
+            <!-- Categories tab Start -->
 <!--            <section class="categories-tab pt-60 pb-60 wow fadeInUp">-->
 <!--                <div class="container auto-container">-->
 <!--                    <div class="row">-->
@@ -535,10 +528,8 @@
                                         <div class="sec-title-style2 style3">
                                             <h2>Популярные категории</h2>
                                         </div>
-                                        <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttext.
-                                            texttexttexttexttexttexttexttext .. </p>
-                                        <div class="btn-box"><a href="shop-grid-left-sidebar.html"
-                                                                class="btn--primary style2">text text</a></div>
+                                        <div class="btn-box"><router-link to="/products" href=""
+                                                                class="btn--primary style2">Смотреть остальные</router-link></div>
                                     </div>
                                 </div>
 
@@ -546,42 +537,42 @@
                                     <div class="row  justify-content-center">
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="categories-three__list-item mt-30 wow fadeInUp animated">
-                                                <div class="categories-three__list-item-inner"><a
-                                                    href="shop-grid-right-sidebar.html" class="img-box"> <img
+                                                <div class="categories-three__list-item-inner"><router-link to="/products"
+                                                    href="" class="img-box"> <img
                                                     src="public/assets/images/home-three/categories-v2-img1.jpg"
                                                     alt=""/>
-                                                    <div class="text"><span>369 text</span></div>
-                                                </a>
+                                                    <div class="text"><span>69 товаров</span></div>
+                                                </router-link>
                                                     <div class="title text-center">
-                                                        <h4><a href="shop-grid-left-sidebar.html">text</a></h4>
+                                                        <h4><router-link to="/products" href="">Игрушки</router-link></h4>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="categories-three__list-item mt-30 wow fadeInUp animated">
-                                                <div class="categories-three__list-item-inner"><a
-                                                    href="shop-grid-left-sidebar.html" class="img-box"> <img
+                                                <div class="categories-three__list-item-inner"><router-link
+                                                    to="/products" href="" class="img-box"> <img
                                                     src="public/assets/images/home-three/categories-v2-img2.jpg"
                                                     alt=""/>
-                                                    <div class="text"><span>369 text</span></div>
-                                                </a>
+                                                    <div class="text"><span>74 товаров</span></div>
+                                                </router-link>
                                                     <div class="title text-center">
-                                                        <h4><a href="shop-grid-left-sidebar.html">text text</a></h4>
+                                                        <h4><router-link to="/products" href="">Косметика</router-link></h4>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-sm-6">
                                             <div class="categories-three__list-item mt-30 wow fadeInUp animated">
-                                                <div class="categories-three__list-item-inner"><a
-                                                    href="shop-grid-left-sidebar.html" class="img-box"> <img
+                                                <div class="categories-three__list-item-inner"><router-link
+                                                    to="/products" href="" class="img-box"> <img
                                                     src="public/assets/images/home-three/categories-v2-img3.jpg"
                                                     alt=""/>
-                                                    <div class="text"><span>369 text</span></div>
-                                                </a>
+                                                    <div class="text"><span>36 товаров</span></div>
+                                                </router-link>
                                                     <div class="title text-center">
-                                                        <h4><a href="shop-grid-left-sidebar.html">text text</a></h4>
+                                                        <h4><router-link to="/products" href="">Книги</router-link></h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -603,9 +594,9 @@
                             <div class="core-features__box d-flex ms-0"><span class="one"></span> <span
                                 class="two"></span>
                                 <div class="icon"><img src="public/assets/images/icon/f-icon-1.png" alt=""></div>
-                                <div class="core-features__box-content"><a href="login.html" class="d-block">
+                                <div class="core-features__box-content"><router-link to="/sign" href="" class="d-block">
                                     <h4> Безопасный платеж </h4>
-                                </a>
+                                </router-link>
                                     <p></p>
                                 </div>
                             </div>

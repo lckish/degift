@@ -14,6 +14,7 @@ class User extends Authenticatable
 
     const GENDER_MALE = 1;
     const GENDER_FEMALE = 2;
+    const GENDER_UNKNOWN ="";
 
     protected $table = 'users';
     protected $guarded = false;
@@ -22,6 +23,7 @@ class User extends Authenticatable
         return [
           self::GENDER_MALE => 'Мужской',
           self::GENDER_FEMALE => 'Женский',
+          self::GENDER_UNKNOWN => 'Неизвестно',
         ];
     }
 

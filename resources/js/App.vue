@@ -12,7 +12,7 @@
                                     <div class="row">
                                         <div class="menu-info d-flex justify-content-between align-items-center">
                                             <div class="menubar"> <span></span> <span></span> <span></span> </div> <a
-                                            href="#0" class="logo"> <img src="public/assets/images/logo/6.png"
+                                            href="#0" class="logo"> <img src="public/assets/images/logo/2.png"
                                                                                  alt=""> </a>
                                             <div class="cart-holder">
                                                 <a href="#" class="cart cart-icon position-relative">
@@ -42,7 +42,7 @@
                     <div class="d-lg-block d-none">
                         <div class="row g-0 position-relative">
                             <div class="col-lg-3 d-flex align-items-center justify-content-center border-rit ">
-                                <div class="logo"> <a href="/"> <img src="public/assets/images/logo/6.png" alt=""> </a>
+                                <div class="logo"> <a href="/"> <img src="public/assets/images/logo/2.png" alt=""> </a>
                                 </div>
                             </div>
                             <div class="col-lg-9 g-0 p-0">
@@ -96,7 +96,7 @@
                             <div class="row">
                                 <div class="menu-info d-flex justify-content-between align-items-center">
                                     <div class="menubar"> <span></span> <span></span> <span></span> </div>
-                                    <router-link to="/" class="logo"> <img src="public/assets/images/logo/6.png" alt=""> </router-link>
+                                    <router-link to="/" class="logo"> <img src="public/assets/images/logo/2.png" alt=""> </router-link>
                                     <div class="cart-holder">
                                         <a href="#0" class="cart cart-icon position-relative">
                                             <i class="flaticon-shopping-cart"></i>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="container position-relative d-lg-block d-none">
                     <div class="d-flex align-items-center justify-content-between"> <router-link to="/" class="logo me-2">
-                        <img src="public/assets/images/logo/6.png" alt=""> </router-link>
+                        <img src="public/assets/images/logo/2.png" alt=""> </router-link>
                         <div class="mega-menu-default mega-menu d-lg-block d-none">
                             <div class="container ">
                                 <div class="row">
@@ -182,7 +182,7 @@
 
         <!--  Footer Three start -->
         <footer class="footer-default footer-3 ">
-            <div class="footer-default__shap_1 position-absolute "> <img src="public/assets/images/shape/footer-shape-1.png"
+            <div class="footer-default__shap_1 position-absolute "> <img src="public/assets/images/shape/footer-shape-2.png"
                                                                          alt=""> </div>
             <!--Start Footer-->
             <div class="footer-default__main-footer position-relative">
@@ -222,7 +222,7 @@
                                     <h4> Информация </h4>
                                 </div>
                                 <ul class="footer-links">
-                                    <li><a href="about-us.html">О нас</a></li>
+                                    <li><router-link  to="/about" href="">О нас</router-link></li>
                                     <li><a href="contact.html">Наши контакты </a></li>
                                     <li><a href="faq.html">Вопросы</a></li>
                                 </ul>
