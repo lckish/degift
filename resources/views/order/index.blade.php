@@ -46,15 +46,16 @@
                                 </thead>
                                 <tbody>
                                 @foreach($orders as $order)
-                                <tr>
-                                    <td><a href="{{route('order.show', $order->id)}}">{{$order->id}}</a></td>
-                                    <td><a href="{{route('user.show', $order->user_id)}}">{{$order->user_id}}</a></td>
-                                    <td>{{$order->products}}</td>
-                                    <td>{{$order->total_price}}</td>
-                                    <td>{{$order->payment_status}}</td>
-                                    <td>{{$order->created_at}}</td>
-                                    <td>{{$order->updated_at}}</td>
-                                </tr>
+                                    <tr><?php $rep = array("[", "{", "}", "]", ",", "\"", "id:", '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ":", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '/', '.', 'A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G' , 'H' , 'I' , 'J' , 'K' , 'L' , 'M' , 'N' , 'O' , 'P' , 'Q' , 'R' , 'S' , 'T' , 'U' , 'V' , 'W' , 'X' , 'Y' , 'Z'); ?>
+                                        <td><a href="{{route('order.show', $order->id)}}">{{$order->id}}</a></td>
+                                        <td><a href="{{route('user.show', $order->user_id)}}">{{$order->user_id}}</a>
+                                        </td>
+                                        <td>{{str_replace($rep, "",$order->products )}}</td>
+                                        <td>{{$order->total_price}}</td>
+                                        <td>{{$order->orderTitle}}</td>
+                                        <td>{{$order->created_at}}</td>
+                                        <td>{{$order->updated_at}}</td>
+                                    </tr>
                                 @endforeach
                                 </tbody>
                             </table>

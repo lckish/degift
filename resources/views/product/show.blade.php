@@ -40,7 +40,7 @@
                             </form>
                         </div>
                         <div class="card-body table-responsive p-0">
-                            <table class="table table-hover text-nowrap">
+                            <table class="table table-hover text-nowrap w-100">
                                 <tbody>
                                 <tr>
                                     <td>ID</td>
@@ -52,7 +52,7 @@
                                 </tr>
                                 <tr>
                                     <td>Фото</td>
-                                    <td><img src="{{asset('/storage/'.$product->preview_image)}}" alt="картинка"></td>
+                                    <td><img src="{{asset('/storage/'.$product->preview_image)}}"  alt="картинка"></td>
                                 </tr>
                                 <tr>
                                     <td>Картинка</td>

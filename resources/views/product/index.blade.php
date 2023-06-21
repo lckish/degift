@@ -30,16 +30,13 @@
                             <a href="{{route('product.create')}}" class="btn btn-primary">Добавить</a>
                         </div>
 
-                        <div class="card-body table-responsive p-0">
+                        <div class="card-body table-responsive p-0" >
                             <table class="table table-hover text-nowrap">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th>Название</th>
                                     <th>Фото</th>
-                                    <th>Описание</th>
-                                    <th>Контент</th>
-                                    <th>Картинка</th>
                                     <th>Цена</th>
                                     <th>Старая цена</th>
                                     <th>Количество</th>
@@ -50,20 +47,19 @@
                                 </thead>
                                 <tbody>
                                 @foreach($products as $product)
-                                <tr>
-                                    <td>{{$product->id}}</td>
-                                    <td><a href="{{route('product.show', $product->id)}}">{{$product->title}}</a></td>
-                                    <td><img src="{{asset('/storage/'.$product->preview_image)}}" class="w-25" alt="картинка"></td>
-                                    <td>{{$product->description}}</td>
-                                    <td>{{$product->content}}</td>
-                                    <td>{{$product->preview_image}}</td>
-                                    <td>{{$product->price}}</td>
-                                    <td>{{$product->old_price}}</td>
-                                    <td>{{$product->count}}</td>
-                                    <td>{{$product->is_published}}</td>
-                                    <td>{{$product->category_id}}</td>
-                                    <td>{{$product->group_id}}</td>
-                                </tr>
+                                    <tr>
+                                        <td>{{$product->id}}</td>
+                                        <td><a href="{{route('product.show', $product->id)}}">{{$product->title}}</a>
+                                        </td>
+                                        <td><img src="{{asset('/storage/'.$product->preview_image)}}" class="w-50"
+                                                 alt="картинка"></td>
+                                        <td>{{$product->price}}</td>
+                                        <td>{{$product->old_price}}</td>
+                                        <td>{{$product->count}}</td>
+                                        <td>{{$product->is_published}}</td>
+                                        <td>{{$product->category_id}}</td>
+                                        <td>{{$product->group_id}}</td>
+                                    </tr>
                                 @endforeach
                                 </tbody>
                             </table>
